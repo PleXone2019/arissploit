@@ -1,4 +1,4 @@
-# Arissploit Framework (exploits database)
+# Arissploit Framework (exploits, viruses, etc.)
         
 <h4 align="center"><img src="https://user-images.githubusercontent.com/43011806/57065407-f66fd680-6cd1-11e9-9f72-5eba1b123cec.jpeg">
 
@@ -121,7 +121,7 @@ Arissploit Framework based on this languages:
 # Arissploit BSD license
 
 
-     Arissploit Framework - database of exploits, viruses, etc.
+     Arissploit Framework is a database of exploits, viruses, etc.
      Copyright (C) 2019 Entynetproject <Ivan Nikolsky>
 
 
