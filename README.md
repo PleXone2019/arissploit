@@ -64,7 +64,7 @@
 
 Arissploit Framework based on this languages:
 
-> Main code (arissploit.sh)
+> Main code (arissploit.py)
 
     LANGUAGE: Python
    
