@@ -78,7 +78,7 @@ Arissploit Framework based on this languages:
     
 > Exploits (example: exploit/android/remote_access)
     
-    LANGUAGE: Lua
+    LANGUAGE: Perl
     
 > Installation scripts (example: install.sh)
 
