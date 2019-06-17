@@ -121,7 +121,7 @@ Arissploit Framework based on this languages:
 # Arissploit BSD license
 
 
-     Arissploit Framework is a database of exploits, viruses, etc.
+     Arissploit Framework - database of exploits, viruses, etc.
      Copyright (C) 2019 Entynetproject <Ivan Nikolsky>
 
 
