@@ -148,8 +148,25 @@ then
 sleep 1
 clear
 cd install
-chmod +x installtermux.sh
-./installtermux.sh
+sleep 1
+echo -e ""$N"Installing dependences..."$C""
+pkg update
+echo "done..."
+pkg upgrade
+echo "done..."
+pkg install git
+echo "done..."
+pkg install wget
+echo "done..."
+pkg install python
+echo "done..."
+pkg install python2
+echo "done..."
+pkg install perl
+echo "done..."
+pkg install php
+echo "done..."
+sleep 0.5
 pip install -r requirements.txt
 fi
 
