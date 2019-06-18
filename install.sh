@@ -104,9 +104,43 @@ then
 sleep 1
 clear
 cd install
-chmod +x installgnuroot.sh
-./installgnuroot.sh
+sleep 1
+echo -e ""$N"Installing dependences..."$C""
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
 pip install -r requirements.txt
+else
+apt-get install python
+echo "done..."
+apt-get install git
+echo "done..."
+apt-get update
+echo "done..."
+apt-get upgrade
+echo "done..."
+apt-get install wget
+echo "done..."
+apt-get install python2-pip
+echo "done..."
+apt-get install perl
+echo "done..."
+apt-get install Build essential
+echo "done..."
+apt-get install libany-uri-escape-perl
+echo "done..."
+apt-get install libhtml-html5-entities-perl
+echo "done..."
+apt-get install libhtml-entities-numbered-perl
+echo "done..."
+apt-get install libhtml-parser-perl
+echo "done..."
+apt-get install libwww-perl
+echo "done..."
+apt-get install php
+echo "done..."
+sleep 0.5
+pip install -r requirements.txt
+fi
 fi
 
 if [[ "$CONF" = "arm" ]]
