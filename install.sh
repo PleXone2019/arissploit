@@ -40,6 +40,7 @@
 CE="\033[0m"
 RS="\033[1;31m"
 YS="\033[1;33m"
+NV="\033[1;37m"
 
 WHO="$( whoami )"
 
@@ -105,39 +106,25 @@ sleep 1
 clear
 cd install
 sleep 1
-echo -e ""$N"Installing dependences..."$C""
+echo -e ""$NV"Installing dependences..."$CE""
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
 pip install -r requirements.txt
 else
-apt-get install python
-echo "done..."
-apt-get install git
-echo "done..."
 apt-get update
-echo "done..."
 apt-get upgrade
-echo "done..."
+apt-get install python
+apt-get install git
 apt-get install wget
-echo "done..."
 apt-get install python2-pip
-echo "done..."
 apt-get install perl
-echo "done..."
 apt-get install Build essential
-echo "done..."
 apt-get install libany-uri-escape-perl
-echo "done..."
 apt-get install libhtml-html5-entities-perl
-echo "done..."
 apt-get install libhtml-entities-numbered-perl
-echo "done..."
 apt-get install libhtml-parser-perl
-echo "done..."
 apt-get install libwww-perl
-echo "done..."
 apt-get install php
-echo "done..."
 sleep 0.5
 pip install -r requirements.txt
 fi
@@ -149,23 +136,15 @@ sleep 1
 clear
 cd install
 sleep 1
-echo -e ""$N"Installing dependences..."$C""
+echo -e ""$NV"Installing dependences..."$CE""
 pkg update
-echo "done..."
 pkg upgrade
-echo "done..."
 pkg install git
-echo "done..."
 pkg install wget
-echo "done..."
 pkg install python
-echo "done..."
 pkg install python2
-echo "done..."
 pkg install perl
-echo "done..."
 pkg install php
-echo "done..."
 sleep 0.5
 pip install -r requirements.txt
 fi
