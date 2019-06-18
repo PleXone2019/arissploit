@@ -96,7 +96,7 @@ def main():
 		print ""+G+" ARISSPLOIT WAS UPGRADED!"
 		time.sleep(1)
 		print
-		print ""+N+"cloning newly updated..."
+		print ""+N+"Cloning newly updated..."
 		time.sleep(5)
 		os.system("cd ~ ; rm -r ~/arissploit ; git clone https://github.com/entynetproject/arissploit.git ; cd arissploit ")
 		time.sleep(3)
