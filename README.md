@@ -68,10 +68,10 @@
                  ,-\ `-.' /.'  /           
                  '---`----'----'    
 
-           =[ Arissploit v1.0 by Entynetproject            ]
-    + -- --=[ 14 Exploits - 10 Scanners 16 post - 38 virus ]
-    + -- --=[ Design by DJ Mobley (ascii designer)         ]
-    + -- --=[ Report Bug On Twitter @arissploit            ]
+           =[ Arissploit v1.0 by Arissploit Team              ]
+    + -- --=[ 14 exploits - 10 scanners 16 posts - 38 viruses ]
+    + -- --=[ Design by DJ Mobley (ascii designer)            ]
+    + -- --=[ Report bug on twitter @arissploit               ]
 
     (console)> show options
 
@@ -83,7 +83,7 @@
       show exploits          Look this exploits
       show scanners          Look this scanners tools
       show viruses           Look this viruses name
-      show post              Updated post
+      show posts             Updated posts
       use exploit/           <exploit name>
       use scanner/           <scanner name>
       make virus/            <virus name>
@@ -115,6 +115,26 @@
     INFO: The program that scans the specified Internet resource, 
     archive or website. Also network scanners can scan open ports or
     your local network and IPs!
+
+# Why our framework?
+
+> Arissploit is free
+
+    INFO: This is good platform to start exploring vulnerabilities!
+    
+> Simple UX/UI interface
+
+    INFO: Arissploit has simple UX/UI for beginners!
+    
+> A lot of tools
+
+    INFO: Arissploit has 14 exploits - 10 scanners, 16 posts - 38 viruses!
+    
+# System requirements
+
+> python2
+
+> python2-pip
 
 # Terms of use
 
