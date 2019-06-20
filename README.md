@@ -56,6 +56,42 @@
 
     INFO: You should know that after uninstalling 
     Arissploit all files of this framework will removed!
+    
+# To execute our arissploit
+
+> arissploit
+
+  
+                    .----.   @   @                  
+                   / .-.-.`.  \v/                            
+                   | | '\ \ \_/ )                      
+                 ,-\ `-.' /.'  /           
+                 '---`----'----'    
+
+           =[ Arissploit v1.0 by Entynetproject            ]
+    + -- --=[ 14 Exploits - 10 Scanners 16 post - 38 virus ]
+    + -- --=[ Design by DJ Mobley (ascii designer)         ]
+    + -- --=[ Report Bug On Twitter @arissploit            ]
+
+    (console)> show options
+
+     Global Options
+     ==============
+
+      Option Name            Description
+      -------------          ------------------
+      show exploits          Look this exploits
+      show scanners          Look this scanners tools
+      show viruses           Look this viruses name
+      show post              Updated post
+      use exploit/           <exploit name>
+      use scanner/           <scanner name>
+      make virus/            <virus name>
+      update                 Update Arissploit Framework
+      clear                  Clean Arissploit input/output
+      run                    Start attack or build virus
+
+    (console)> 
 
 # About arissploit modules
 
