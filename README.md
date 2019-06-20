@@ -57,41 +57,9 @@
     INFO: You should know that after uninstalling 
     Arissploit all files of this framework will removed!
     
-# To execute our arissploit
+# Install.sh interface
 
-> arissploit
 
-  
-                    .----.   @   @                  
-                   / .-.-.`.  \v/                            
-                   | | '\ \ \_/ )                      
-                 ,-\ `-.' /.'  /           
-                 '---`----'----'    
-
-           =[ Arissploit v1.0 by Arissploit Team              ]
-    + -- --=[ 14 exploits - 10 scanners 16 posts - 38 viruses ]
-    + -- --=[ Design by DJ Mobley (ascii designer)            ]
-    + -- --=[ Report bug on twitter @arissploit               ]
-
-    (console)> show options
-
-     Global Options
-     ==============
-
-      Option Name            Description
-      -------------          ------------------
-      show exploits          Look this exploits
-      show scanners          Look this scanners tools
-      show viruses           Look this viruses name
-      show posts             Updated posts
-      use exploit/           <exploit name>
-      use scanner/           <scanner name>
-      make virus/            <virus name>
-      update                 Update Arissploit Framework
-      clear                  Clean Arissploit input/output
-      run                    Start attack or build virus
-
-    (console)> 
 
 # About arissploit modules
 
@@ -120,21 +88,30 @@
 
 > Arissploit is a free software
 
-    INFO: This is good platform to start exploring vulnerabilities!
+    INFO: This is a good platform 
+    to start exploring vulnerabilities!
     
 > Simple UX/UI interface for beginners
 
     INFO: Arissploit has simple UX/UI for beginners!
+    It is easy to understand and it will be easier 
+    for you to master the Arissploit Framework.
     
 > A lot of tools for beginners
 
-    INFO: Arissploit has 14 exploits - 10 scanners, 16 posts - 38 viruses!
+    INFO: Arissploit has еру following modules
+    14 exploits - 10 scanners, 16 posts - 38 viruses,
+    This is enough for beginners.
     
 # System requirements
 
 > python2
 
+    INFO: You can install it with apt-get install python2
+
 > python2-pip
+
+    INFO: Ypu can install it with apt-get install python2-pip
 
 # Terms of use
 
