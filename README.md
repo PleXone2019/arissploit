@@ -118,15 +118,15 @@
 
 # Why our framework?
 
-> Arissploit is free
+> Arissploit is free software
 
     INFO: This is good platform to start exploring vulnerabilities!
     
-> Simple UX/UI interface
+> Simple UX/UI interface for beginners
 
     INFO: Arissploit has simple UX/UI for beginners!
     
-> A lot of tools
+> A lot of tools for beginners
 
     INFO: Arissploit has 14 exploits - 10 scanners, 16 posts - 38 viruses!
     
