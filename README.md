@@ -34,7 +34,7 @@
     viruses and tools for penetration testing developed by 
     Entynetproject and designed by DJ Mobley.
 
-<h4 align="center"><img src="https://user-images.githubusercontent.com/43011806/59841939-17fa4f80-935e-11e9-9549-436dfbaada37.png">
+<h4 align="center"><img src="https://user-images.githubusercontent.com/43011806/59842131-8f2fe380-935e-11e9-926d-8e00bfcd47c7.png">
 
 # To install our arissploit
 
