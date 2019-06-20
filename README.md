@@ -34,8 +34,6 @@
     viruses and tools for penetration testing developed by 
     Entynetproject and designed by DJ Mobley.
 
-<h4 align="center"><img src="https://user-images.githubusercontent.com/43011806/59842131-8f2fe380-935e-11e9-926d-8e00bfcd47c7.png">
-
 # To install our arissploit
 
 > cd arissploit
@@ -58,13 +56,6 @@
 
     INFO: You should know that after uninstalling 
     Arissploit all files of this framework will removed!
-
-# Arissploit modules
-
-    WARNING: Use arissploit modules - exploits, 
-    viruses or scanners only in education purposes!
-
-<h4 align="center"><img src="https://user-images.githubusercontent.com/43011806/59842274-e03fd780-935e-11e9-9878-5f92229587c5.png">
 
 # About arissploit modules
 
