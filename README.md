@@ -35,9 +35,8 @@
     Entynetproject and designed by DJ Mobley.
 
 
-![50B14B6F-7CC5-464E-B079-C51235E7515D](https://user-images.githubusercontent.com/43011806/57973932-11706500-79b9-11e9-97ac-5a53182de684.jpeg)
 
-# How to install our arissploit
+# To install our arissploit
 
 > cd arissploit
 
@@ -49,7 +48,7 @@
     select your arch (amd/arm), amd - all computer os,
     arm - android termux!
 
-# How to uninstall our arissploit
+# To uninstall our arissploit
 
 > cd arissploit
 
@@ -89,7 +88,7 @@ Arissploit Framework based on this languages:
     WARNING: Use arissploit modules - exploits, 
     viruses or scanners only in education purposes!
 
-![7DDD4361-FA93-403D-8A22-628E206F8CDB](https://user-images.githubusercontent.com/43011806/57135790-57231000-6db3-11e9-82ff-9785e842468e.jpeg)
+
 
 > Exploits
 
