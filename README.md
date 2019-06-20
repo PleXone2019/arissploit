@@ -46,7 +46,7 @@
 
     INFO: After running install.sh you should
     select your arch (amd/arm), amd - all computer os,
-    arm - android termux!
+    arm - android termux or jailbroken iOS.
 
 # To uninstall our arissploit
 
