@@ -54,10 +54,10 @@ def show_graphic():
     os.system("cat banner/banner4.py")
 show_graphic()
 print
-print ""+N+"       =[ "+O+"Arissploit v1.0 by Entynetproject            "+N+"]"
-print "+ -- --=[ 14 Exploits - 10 Scanners 16 post - 38 virus ]"
-print "+ -- --=[ Design by DJ Mobley (ascii designer)         "+N+"]"
-print "+ -- --=[ Report Bug On Twitter "+R+"@arissploit            "+N+"]"
+print ""+N+"       =[ "+O+"Arissploit v1.0 by Arissploit Team              "+N+"]"
+print "+ -- --=[ 14 exploits - 10 scanners 16 posts - 38 viruses ]"
+print "+ -- --=[ Design by DJ Mobley (ascii designer)            "+N+"]"
+print "+ -- --=[ Report bug on twitter "+R+"@arissploit               "+N+"]"
 print
 def help():
 		print ""+N+""
@@ -69,7 +69,7 @@ def help():
 		print "  show exploits          Look this exploits"
 		print "  show scanners          Look this scanners tools"
 		print "  show viruses           Look this viruses name"
-		print "  show post              Updated post"
+		print "  show posts             Updated posts"
 		print "  use exploit/           <exploit name>"
 		print "  use scanner/           <scanner name>"
 		print "  make virus/            <virus name>"
@@ -143,7 +143,7 @@ def main():
 		print "  usr_pro_wordpress_auto_find    good        find user pro vulnerability"
 		print
 		main()
-	elif dr == "show post":
+	elif dr == "show posts":
 		print ""+N+""
                 print " POST"
                 print " ===="
