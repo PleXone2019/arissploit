@@ -118,7 +118,7 @@
 
 # Why our framework?
 
-> Arissploit is free software
+> Arissploit is a free software
 
     INFO: This is good platform to start exploring vulnerabilities!
     
