@@ -137,6 +137,10 @@ clear
 cd install
 sleep 1
 echo -e ""$NV"Installing dependences..."$CE""
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+pip install -r requirements.txt
+else
 pkg update
 pkg upgrade
 pkg install git
@@ -147,6 +151,7 @@ pkg install perl
 pkg install php
 sleep 0.5
 pip install -r requirements.txt
+fi
 fi
 
 clear
