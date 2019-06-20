@@ -90,7 +90,7 @@ Arissploit Framework based on this languages:
 
 <h4 align="center"><img src="https://user-images.githubusercontent.com/43011806/59842274-e03fd780-935e-11e9-9878-5f92229587c5.png">
 
-# About arissploit modules
+# About this modules
 
 > Exploits
 
