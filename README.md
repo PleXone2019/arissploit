@@ -57,31 +57,7 @@
 > ./uninstall.sh
 
     INFO: You should know that after uninstalling 
-    ArisSploit all files of this framework will removed!
-
-# Arissploit programming languages 
-
-Arissploit Framework based on this languages:
-
-> Main code (arissploit.py)
-
-    LANGUAGE: Python
-   
-> Viruses (example: virus/on_android_boot)
-
-    LANGUAGE: Jessie
-    
-> Scanners (example: scanners/cms_war)
-
-    LANGUAGE: Perl
-    
-> Exploits (example: exploit/android/remote_access)
-    
-    LANGUAGE: Perl
-    
-> Installation scripts (example: install.sh)
-
-    LANGUAGE: Shell
+    Arissploit all files of this framework will removed!
 
 # Arissploit modules
 
@@ -90,7 +66,7 @@ Arissploit Framework based on this languages:
 
 <h4 align="center"><img src="https://user-images.githubusercontent.com/43011806/59842274-e03fd780-935e-11e9-9878-5f92229587c5.png">
 
-# About this modules
+# About arissploit modules
 
 > Exploits
 
