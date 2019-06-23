@@ -30,7 +30,7 @@
 
 ![1](https://user-images.githubusercontent.com/43011806/59859882-4a1fa780-9386-11e9-9d61-44c49645ee2b.png)
 
-# About our framework
+# About arissploit framework
 
     INFO: Arissploit Framework is a database of exploits,
     viruses and tools for penetration testing developed by 
