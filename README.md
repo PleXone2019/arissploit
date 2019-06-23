@@ -47,6 +47,8 @@
     INFO: After running install.sh you should
     select your arch (amd/arm), amd - all computer os,
     arm - android termux or jailbroken iOS.
+    
+![4](https://user-images.githubusercontent.com/43011806/59859448-61aa6080-9385-11e9-8f80-80379dbb6929.png)
 
 # To uninstall arissploit
 
@@ -58,11 +60,6 @@
 
     INFO: You should know that after uninstalling 
     Arissploit all files of this framework will removed!
-    
-# Install.sh interface
-
-![2](https://user-images.githubusercontent.com/43011806/59859884-4a1fa780-9386-11e9-80e3-0def5d0d6ed3.png)
-![4](https://user-images.githubusercontent.com/43011806/59859448-61aa6080-9385-11e9-8f80-80379dbb6929.png)
 
 # About arissploit modules
 
@@ -89,7 +86,7 @@
     
 ![2](https://user-images.githubusercontent.com/43011806/59859441-5f480680-9385-11e9-967b-e5a6e6788c2f.png)
 
-# Why our framework?
+# Why arissploit framework?
 
 > Arissploit is a free software
 
