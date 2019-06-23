@@ -38,8 +38,6 @@
 - [About arissploit modules](https://github.com/entynetproject/arissploit#about-arissploit-modules) 
 - [Why arissploit framework?](https://github.com/entynetproject/arissploit#why-arissploit-framework)
 - [System requirements](https://github.com/entynetproject/arissploit#system-requirements)
-- [About arissploit team](https://github.com/entynetproject/arissploit#about-arissploit-team)
-- [Arissploit files and folders](https://github.com/entynetproject/arissploit#arissploit-files-and-folders)
 - [Terms of use](https://github.com/entynetproject/arissploit#terms-of-use)
 - [Arissploit BSD license](https://github.com/entynetproject/arissploit#arissploit-bsd-license)
 
@@ -134,59 +132,6 @@
     Use this tool wisely and never without permission.
     I am not responsible for anything you do with this tool.
     
-# About arissploit team
-
-> Entynetproject
-
-    INFO: Main developer of Arissploit Framework
-    
-> DJ Mobley
-
-    INFO: Ascii designer of Arissploit Framework
-    
-<h4 align="center">Resources</h4>
-<p align="center">
-  <a href="https://mobile.twitter.com/arissploit">
-    <img src="https://img.shields.io/badge/twitter-arissploit-blue.svg">
- </a>
-  <a href="https://mobile.twitter.com/entynetproject">
-    <img src="https://img.shields.io/badge/twitter-entynetproject-lightgray.svg">
- </a>
- <a href="https://mobile.twitter.com/_mobley_">
-    <img src="https://img.shields.io/badge/twitter-mobley-black.svg">
- </a>
-</p>
-
-# Arissploit files and folders
-
-    INFO: Here you can open view all arissploit folders
-    and you can view files in these folders!
-    
-<h4 align="center">Files</h4>
-<p align="center">
- <a href="https://github.com/entynetproject/arissploit">
-      <img src="https://img.shields.io/badge/files-19-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject/arissploit">
-    <img src="https://img.shields.io/badge/folders-5-blue.svg">
- </a>
-  <a href="https://github.com/entynetproject/arissploit/tree/master/modules">
-      <img src="https://img.shields.io/badge/folder-/modules-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject/arissploit/tree/master/install">
-      <img src="https://img.shields.io/badge/folder-/install-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject/arissploit/tree/master/bin">
-    <img src="https://img.shields.io/badge/folder-/bin-blue.svg">
-  </a>
-<a href="https://github.com/entynetproject/arissploit/tree/master/virus">
-    <img src="https://img.shields.io/badge/folder-/virus-green.svg?maxAge=2592000">
-  </a>
-<a href="https://github.com/entynetproject/ehtools/tree/master/banner">
-    <img src="https://img.shields.io/badge/folder-/banner-green.svg?maxAge=2592000">
-</a>
-</p>
-
 # Arissploit BSD license
 
 
