@@ -36,7 +36,7 @@
     - [How to install arissploit](https://github.com/entynetproject/arissploit#how-to-install-arissploit)
     - [How to uninstall arissploit](https://github.com/entynetproject/arissploit#how-to-uninstall-arissploit)
 - [About arissploit modules](https://github.com/entynetproject/arissploit#about-arissploit-modules) 
-- [Why arissploit framework](https://github.com/entynetproject/arissploit#why-arissploit-framework)
+- [Why arissploit framework?](https://github.com/entynetproject/arissploit#why-arissploit-framework)
 - [System requirements](https://github.com/entynetproject/arissploit#system-requirements)
 - [About arissploit team](https://github.com/entynetproject/arissploit#about-arissploit-team)
 - [Arissploit files and folders](https://github.com/entynetproject/arissploit#arissploit-files-and-folders)
