@@ -36,7 +36,7 @@
     viruses and tools for penetration testing developed by 
     Entynetproject and designed by DJ Mobley.
 
-# To install our arissploit
+# To install arissploit
 
 > cd arissploit
 
@@ -48,7 +48,7 @@
     select your arch (amd/arm), amd - all computer os,
     arm - android termux or jailbroken iOS.
 
-# To uninstall our arissploit
+# To uninstall arissploit
 
 > cd arissploit
 
