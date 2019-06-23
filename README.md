@@ -89,7 +89,7 @@
     
 ![2](https://user-images.githubusercontent.com/43011806/59859441-5f480680-9385-11e9-967b-e5a6e6788c2f.png)
 
-# Why our framework?
+# Why our framework
 
 > Arissploit is a free software
 
