@@ -38,6 +38,8 @@
 - [About arissploit modules](https://github.com/entynetproject/arissploit#about-arissploit-modules) 
 - [Why arissploit framework](https://github.com/entynetproject/arissploit#why-arissploit-framework)
 - [System requirements](https://github.com/entynetproject/arissploit#system-requirements)
+- [About arissploit team](https://github.com/entynetproject/arissploit#about-arissploit-team)
+- [Arissploit files and folders](https://github.com/entynetproject/arissploit#arissploit-files-and-folders)
 - [Terms of use](https://github.com/entynetproject/arissploit#terms-of-use)
 - [Arissploit BSD license](https://github.com/entynetproject/arissploit#arissploit-bsd-license)
 
@@ -145,7 +147,7 @@
 <h4 align="center">Resources</h4>
 <p align="center">
   <a href="https://mobile.twitter.com/arissploit">
-    <img src="https://img.shields.io/badge/twitter-ehtools-blue.svg">
+    <img src="https://img.shields.io/badge/twitter-arissploit-blue.svg">
  </a>
   <a href="https://mobile.twitter.com/entynetproject">
     <img src="https://img.shields.io/badge/twitter-entynetproject-lightgray.svg">
@@ -163,7 +165,7 @@
 <h4 align="center">Files</h4>
 <p align="center">
  <a href="https://github.com/entynetproject/arissploit">
-      <img src="https://img.shields.io/badge/files-?-red.svg?maxAge=2592000">
+      <img src="https://img.shields.io/badge/files-19-red.svg?maxAge=2592000">
   </a>
   <a href="https://github.com/entynetproject/arissploit">
     <img src="https://img.shields.io/badge/folders-5-blue.svg">
