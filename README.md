@@ -57,8 +57,6 @@
 
 > ./install.sh
 
-> arissploit
-
     INFO: After running install.sh you should
     select your arch (amd/arm), amd - all computer os,
     arm - android termux or jailbroken iOS.
