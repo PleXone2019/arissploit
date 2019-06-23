@@ -33,8 +33,8 @@
 # Table of contents
 
 - [About arissploit framework](https://github.com/entynetproject/arissploit#about-arissploit-framework) 
-    - [To install arissploit](https://github.com/entynetproject/arissploit#to-install-arissploit)
-    - [To uninstall arissploit](https://github.com/entynetproject/arissploit#to-uninstall-arissploit)
+    - [How to install arissploit](https://github.com/entynetproject/arissploit#how-to-install-arissploit)
+    - [How to uninstall arissploit](https://github.com/entynetproject/arissploit#how-to-uninstall-arissploit)
 - [About arissploit modules](https://github.com/entynetproject/arissploit#about-arissploit-modules) 
 - [Why arissploit framework](https://github.com/entynetproject/arissploit#why-arissploit-framework)
 - [System requirements](https://github.com/entynetproject/arissploit#system-requirements)
@@ -49,7 +49,7 @@
     viruses and tools for penetration testing developed by 
     Entynetproject and designed by DJ Mobley.
 
-# To install arissploit
+# How to install arissploit
 
 > cd arissploit
 
@@ -63,7 +63,7 @@
     
 ![4](https://user-images.githubusercontent.com/43011806/59859448-61aa6080-9385-11e9-8f80-80379dbb6929.png)
 
-# To uninstall arissploit
+# How to uninstall arissploit
 
 > cd arissploit
 
