@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/language-python-blue.svg">
  </a>
   <a href="https://github.com/entynetproject/arissploit">
-    <img src="https://img.shields.io/badge/arch-arm/amd-red.svg">
+    <img src="https://img.shields.io/badge/arch-amd/arm-red.svg">
  </a>
   <a href="https://github.com/entynetproject/arissploit/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/arissploit.svg">
