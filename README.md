@@ -30,17 +30,6 @@
 
 ![1](https://user-images.githubusercontent.com/43011806/59859882-4a1fa780-9386-11e9-9d61-44c49645ee2b.png)
 
-# Table of contents
-
-- [About arissploit framework](https://github.com/entynetproject/arissploit#about-arissploit-framework) 
-    - [How to install arissploit](https://github.com/entynetproject/arissploit#how-to-install-arissploit)
-    - [How to uninstall arissploit](https://github.com/entynetproject/arissploit#how-to-uninstall-arissploit)
-- [About arissploit modules](https://github.com/entynetproject/arissploit#about-arissploit-modules) 
-- [Why arissploit framework?](https://github.com/entynetproject/arissploit#why-arissploit-framework)
-- [System requirements](https://github.com/entynetproject/arissploit#system-requirements)
-- [Terms of use](https://github.com/entynetproject/arissploit#terms-of-use)
-- [Arissploit BSD license](https://github.com/entynetproject/arissploit#arissploit-bsd-license)
-
 # About arissploit framework
 
     INFO: Arissploit Framework is a database of exploits,
