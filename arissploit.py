@@ -51,7 +51,7 @@ B = '\033[1;34m' #Blue
 E = '\033[0m' # End
 print "\033]2;Arissploit Framework\a"
 def show_graphic():
-    os.system("cat banner/banner4.py")
+    os.system("cat banner/banner.txt")
 show_graphic()
 print
 print ""+N+"       =[ "+O+"Arissploit v1.0 by Arissploit Team              "+N+"]"
