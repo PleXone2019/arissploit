@@ -70,7 +70,7 @@ fi
 
 printf '\033]2;Arissploit INSTALLER\a'
 clear
-cat banner/banner7.py
+cat banner/banner1.txt
 echo -e "\033[1;33mBy Arissploit Team\033[0m"
 sleep 3
 echo -e "More on our site:"
