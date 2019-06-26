@@ -112,7 +112,6 @@ then
 pip install -r requirements.txt
 else
 apt-get update
-apt-get upgrade
 apt-get install python
 apt-get install git
 apt-get install wget
@@ -142,7 +141,6 @@ then
 pip install -r requirements.txt
 else
 pkg update
-pkg upgrade
 pkg install git
 pkg install wget
 pkg install python
