@@ -45,6 +45,15 @@ B="\033[1;34m" #Blue
 CE="\033[0m"
 SA="$( cd ~ && pwd )"
 
+{
+ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+} &> /dev/null
+if [[ "$ASESR" = "" ]]
+then 
+sleep 1
+exit
+fi
+
 if [[ -f ~/arissploit/arissploit.py ]]
 then
 sleep 1
