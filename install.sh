@@ -96,8 +96,8 @@ chmod +x /usr/local/bin/arissploit
 
 sleep 1
 echo -e "Install arissploit on amd or arm("$YS"amd"$CE"/"$YS"arm"$CE")?"
-echo -e "Our programm supports two popular architectures "$YS"amd"$CE" and "$YS"arm"$CE"!"
-echo -e "Select your architecture to install compatible arissploit dependences!"
+echo -e "Our programm supports two architectures "$YS"amd"$CE" and "$YS"arm"$CE"."
+echo -e "Select your arch to install compatible arissploit dependences."
 read -p $'(\033[4;93march\033[0m)> ' CONF
 
 if [[ "$CONF" = "amd" ]]
