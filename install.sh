@@ -95,8 +95,8 @@ chmod +x /usr/local/bin/arissploit
 } &> /dev/null
 
 sleep 1
-echo -e "Install arissploit on amd or arm("$YS"amd"$CE"/"$YS"arm"$CE")?"
-echo -e "Our programm supports two architectures "$YS"amd"$CE" and "$YS"arm"$CE"."
+echo -e "Install arissploit on amd or arm("$YS"amd"$CE"/"$YS"intel"$$CE"/"$YS"arm"$CE")?"
+echo -e "Arissploit supports three architectures "$YS"amd"$CE", "$YS"intel"$CE" and "$YS"arm"$CE"."
 echo -e "Select your arch to install compatible arissploit dependences."
 read -p $'(\033[4;93march\033[0m)> ' CONF
 
@@ -147,6 +147,35 @@ pkg install python
 pkg install python2
 pkg install perl
 pkg install php
+sleep 0.5
+pip install -r requirements.txt
+fi
+fi
+
+if [[ "$CONF" = "intel" ]]
+then
+sleep 1
+clear
+cd install
+sleep 1
+echo -e ""$NV"Installing dependences..."$CE""
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+pip install -r requirements.txt
+else
+apt-get update
+apt-get install python
+apt-get install git
+apt-get install wget
+apt-get install python2-pip
+apt-get install perl
+apt-get install Build essential
+apt-get install libany-uri-escape-perl
+apt-get install libhtml-html5-entities-perl
+apt-get install libhtml-entities-numbered-perl
+apt-get install libhtml-parser-perl
+apt-get install libwww-perl
+apt-get install php
 sleep 0.5
 pip install -r requirements.txt
 fi
