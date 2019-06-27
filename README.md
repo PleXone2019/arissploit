@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/language-python-blue.svg">
  </a>
   <a href="https://github.com/entynetproject/arissploit">
-    <img src="https://img.shields.io/badge/arch-amd/arm-red.svg">
+    <img src="https://img.shields.io/badge/arch-amd/intel/arm-red.svg">
  </a>
   <a href="https://github.com/entynetproject/arissploit/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/arissploit.svg">
@@ -45,7 +45,7 @@
 > ./install.sh
 
     INFO: After running install.sh you should
-    select your arch (amd/arm), amd - all computer os,
+    select your arch (amd/intel/arm), amd/intel - all computer OS,
     arm - android termux or jailbroken iOS.
     
 ![4](https://user-images.githubusercontent.com/43011806/59859448-61aa6080-9385-11e9-8f80-80379dbb6929.png)
