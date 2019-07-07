@@ -111,7 +111,7 @@ Arissploit Framework is a database of exploits, viruses and tools for penetratio
 
 > python2-pip
 
-    INFO: Ypu can install it with apt-get install python2-pip
+    INFO: You can install it with apt-get install python2-pip
 
 # Terms of use
 
