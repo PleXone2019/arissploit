@@ -32,7 +32,7 @@
 
 # About arissploit framework
 
-Arissploit Framework is a database of exploits, viruses and tools for penetration testing. Arissploit is a powerful framework includes a lot of tools for beginners. You can explore kernel vulnerabilities, network vulnerabilities and etc.
+Arissploit Framework is a database of exploits, viruses and tools for penetration testing. Arissploit is a powerful framework includes a lot of tools for beginners. You can explore operating system kernel vulnerabilities, network vulnerabilities and etc.
 
 # How to install arissploit
 
