@@ -32,7 +32,7 @@
 
 # About arissploit framework
 
-Arissploit Framework is a database of exploits, viruses and tools for penetration testing developed by Entynetproject and designed by DJ Mobley.
+Arissploit Framework is a database of exploits, viruses and tools for penetration testing. Arissploit is a powerful framework includes a lot of tools for beginners. Arissploit Framework developed by Entynetproject and designed by DJ Mobley.
 
 # How to install arissploit
 
