@@ -56,6 +56,5 @@ fi
 {
 rm /bin/arissploit
 rm /usr/local/bin/arissploit
-cd
-rm -r arissploit
+rm -r /etc/arissploit
 } &> /dev/null
