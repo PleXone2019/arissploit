@@ -54,7 +54,7 @@ sleep 1
 exit
 fi
 
-cd 
+cd /etc 
 if [[ -d arissploit ]]
 then
 clear
@@ -65,12 +65,11 @@ git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
 cd arissploit 
 chmod +x install.sh
-cd arissploit
 fi
 
 printf '\033]2;Arissploit INSTALLER\a'
 clear
-cat banner/banner1.txt
+cat /etc/arissploit/banner/banner1.txt
 echo -e "\033[1;33mBy Arissploit Team\033[0m"
 sleep 3
 echo -e "More on our site:"
