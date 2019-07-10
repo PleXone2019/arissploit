@@ -97,7 +97,7 @@ chmod +x /usr/local/bin/arissploit
 sleep 1
 echo -e "Select your architecture ("$YS"amd"$CE"/"$YS"intel"$CE"/"$YS"arm"$CE")."
 echo -e "Arissploit supports "$YS"amd"$CE", "$YS"intel"$CE" and "$YS"arm"$CE" architectures."
-echo -e "Select your architecture to install compatible dependences."
+echo -e "Select your architecture to install compatible dependencies."
 read -p $'(\033[4;93march\033[0m)> ' CONF
 
 if [[ "$CONF" = "amd" ]]
@@ -106,7 +106,7 @@ sleep 1
 clear
 cd install
 sleep 1
-echo -e ""$NV"Installing dependences..."$CE""
+echo -e ""$NV"Installing dependencies..."$CE""
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
 pip install -r requirements.txt
@@ -135,7 +135,7 @@ sleep 1
 clear
 cd install
 sleep 1
-echo -e ""$NV"Installing dependences..."$CE""
+echo -e ""$NV"Installing dependencies..."$CE""
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
 pip install -r requirements.txt
@@ -158,7 +158,7 @@ sleep 1
 clear
 cd install
 sleep 1
-echo -e ""$NV"Installing dependences..."$CE""
+echo -e ""$NV"Installing dependencies..."$CE""
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
 pip install -r requirements.txt
