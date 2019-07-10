@@ -43,7 +43,7 @@ G="\033[32m" # Green
 O="\033[1;33m" # Orange
 B="\033[1;34m" #Blue
 CE="\033[0m"
-SA="$( cd ~ && pwd )"
+SA="$( cd /etc && pwd )"
 
 {
 ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
@@ -54,26 +54,26 @@ sleep 1
 exit
 fi
 
-if [[ -f ~/arissploit/arissploit.py ]]
+if [[ -f /etc/arissploit/arissploit.py ]]
 then
 sleep 1
-cd ~/arissploit 
+cd /etc/arissploit 
 trap '' INT TSTP
 trap '' 2
 python arissploit.py
 else
-cd ~
-if [[ -d ~/arissploit ]]
+cd /etc
+if [[ -d /etc/arissploit ]]
 then
-rm -r ~/arissploit
-cd ~
+rm -r /etc/arissploit
+cd /etc
 {
 git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
 cd arissploit
 arissploit
 else
-cd ~
+cd /etc
 {
 git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
