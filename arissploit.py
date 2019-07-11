@@ -49,6 +49,13 @@ G = '\033[32m' # Green
 O = '\033[0;33m' # Orange
 B = '\033[1;34m' #Blue
 E = '\033[0m' # End
+
+WHO=os.system("whoami")
+ROOT='root'
+
+if WHO !== ROOT:
+	exit()
+
 print "\033]2;Arissploit Framework\a"
 def show_graphic():
     os.system("cat /etc/arissploit/banner/banner.txt")
