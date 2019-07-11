@@ -53,7 +53,7 @@ E = '\033[0m' # End
 WHO=os.system("whoami")
 ROOT='root'
 
-if WHO !== ROOT:
+if WHO != ROOT:
 	exit()
 
 print "\033]2;Arissploit Framework\a"
