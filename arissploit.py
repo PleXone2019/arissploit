@@ -50,10 +50,9 @@ O = '\033[0;33m' # Orange
 B = '\033[1;34m' #Blue
 E = '\033[0m' # End
 
-WHO=os.system("whoami &> /dev/null")
-ROOT='root'
+name = os.popen('whoami').read() 
 
-if WHO == "root":
+if name == "root":
 	time.sleep(0)
 else:
 	exit()
