@@ -71,13 +71,13 @@ cd /etc
 git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
 cd arissploit
-arissploit
+python arissploit.py
 else
 cd /etc
 {
 git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
 cd arissploit
-arissploit
+python arissploit.py
 fi
 fi
