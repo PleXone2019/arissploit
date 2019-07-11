@@ -54,7 +54,7 @@ sleep 1
 exit
 fi
 
-cd /etc 
+cd ~ 
 if [[ -d arissploit ]]
 then
 clear
@@ -69,7 +69,7 @@ fi
 
 printf '\033]2;Arissploit INSTALLER\a'
 clear
-cat /etc/arissploit/banner/banner1.txt
+cat ~/arissploit/banner/banner1.txt
 echo -e "\033[1;33mBy Arissploit Team\033[0m"
 sleep 3
 echo -e "More on our site:"
