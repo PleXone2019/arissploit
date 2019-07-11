@@ -50,13 +50,6 @@ O = '\033[0;33m' # Orange
 B = '\033[1;34m' #Blue
 E = '\033[0m' # End
 
-name = os.popen('whoami').read() 
-
-if name == "root":
-	time.sleep(0)
-else:
-	exit()
-
 print "\033]2;Arissploit Framework\a"
 def show_graphic():
     os.system("cat /etc/arissploit/banner/banner.txt")
