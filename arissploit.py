@@ -50,10 +50,12 @@ O = '\033[0;33m' # Orange
 B = '\033[1;34m' #Blue
 E = '\033[0m' # End
 
-WHO=os.system("whoami")
+WHO=os.system("whoami &> /dev/null")
 ROOT='root'
 
-if WHO != ROOT:
+if WHO == "root":
+	time.sleep(0)
+else:
 	exit()
 
 print "\033]2;Arissploit Framework\a"
