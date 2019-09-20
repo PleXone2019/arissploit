@@ -59,9 +59,6 @@
 
 > ./uninstall.sh
 
-    INFO: You should know that after uninstalling 
-    Arissploit all files of this framework will removed!
-
 # About arissploit modules
 
 > Exploits
