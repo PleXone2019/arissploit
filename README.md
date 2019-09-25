@@ -11,7 +11,7 @@
   <a href="https://github.com/entynetproject/arissploit/releases">
     <img src="https://img.shields.io/github/release/entynetproject/arissploit.svg">
   </a>
-  <a href="https://ru.m.wikipedia.org/wiki/python">
+  <a href="https://wikipedia.org/wiki/Python_(programming_language)">
     <img src="https://img.shields.io/badge/language-python-blue.svg">
  </a>
   <a href="https://github.com/entynetproject/arissploit">
@@ -23,7 +23,7 @@
   <a href="https://github.com/entynetproject/arissploit/wiki">
       <img src="https://img.shields.io/badge/wiki%20-arissploit-lightgrey.svg">
  </a>
-  <a href="https://mobile.twitter.com/arissploit">
+  <a href="https://twitter.com/arissploit">
     <img src="https://img.shields.io/badge/twitter-arissploit-blue.svg">
  </a>
 </p>
