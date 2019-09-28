@@ -123,7 +123,7 @@
 
 
        Arissploit Framework - database of exploits, viruses, etc.
-       Copyright (C) 2019 Entynetproject <Ivan Nikolsky>
+       Copyright (C) 2019 Arissploit Team
 
 
        Modified BSD License
