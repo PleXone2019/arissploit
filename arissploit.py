@@ -62,7 +62,7 @@ git clone https://github.com/entynetproject/arissploit.git
 fi
 """)
 
-os.chdir("~/arissploit")
+os.chdir(os.path.expanduser("~/arissploit"))
 
 print "\033]2;Arissploit Framework\a"
 def show_graphic():
