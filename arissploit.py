@@ -62,6 +62,8 @@ git clone https://github.com/entynetproject/arissploit.git
 fi
 """)
 
+os.chdir("~/arissploit")
+
 print "\033]2;Arissploit Framework\a"
 def show_graphic():
     os.system("cd && cat arissploit/banner/banner.txt")
