@@ -50,9 +50,21 @@ O = '\033[0;33m' # Orange
 B = '\033[1;34m' #Blue
 E = '\033[0m' # End
 
+os.system("""
+if [[ -d ~/arissploit ]]
+then
+sleep 0
+else
+cd ~
+{
+git clone https://github.com/entynetproject/arissploit.git
+} &> /dev/null
+fi
+""")
+
 print "\033]2;Arissploit Framework\a"
 def show_graphic():
-    os.system("cat banner/banner.txt")
+    os.system("cd && cat arissploit/banner/banner.txt")
 show_graphic()
 print
 print ""+N+"       =[ "+O+"Arissploit v1.0 by Arissploit Team              "+N+"]"
@@ -99,7 +111,7 @@ def main():
 		print
 		print ""+N+"Cloning newly updated..."
 		time.sleep(5)
-		os.system("rm -r ../arissploit ; cd ~ ; git clone https://github.com/entynetproject/arissploit.git ; cd arissploit ")
+		os.system("rm -r ~/arissploit ; cd ~ ; git clone https://github.com/entynetproject/arissploit.git ; cd ~/arissploit ")
 		time.sleep(3)
                 print ""+B+"~ "+N+"Updated!"
                 time.sleep(1)
