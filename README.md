@@ -78,7 +78,7 @@
 
 > Scanners
 
-    INFO: The program that scans the specified Internet resource, 
+    INFO: The program that scans the specified internet resource, 
     archive or website. Also network scanners can scan open ports or
     your local network and IPs!
     
@@ -99,20 +99,10 @@
     
 > A lot of tools for beginners
 
-    INFO: Arissploit has еру following modules
+    INFO: Arissploit includes the following modules:
     14 exploits - 10 scanners, 16 posts - 38 viruses,
     This is enough for beginners.
     
-# System requirements
-
-> python2
-
-    INFO: You can install it with apt-get install python2
-
-> python2-pip
-
-    INFO: You can install it with apt-get install python2-pip
-
 # Terms of use
 
     This tool is only for educational purposes only.
