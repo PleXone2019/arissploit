@@ -45,6 +45,8 @@ B="\033[1;34m" #Blue
 CE="\033[0m"
 SA="$( cd ~ && pwd )"
 
+print "\033]2;Arissploit Framework\a"
+
 {
 ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 } &> /dev/null
