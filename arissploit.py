@@ -50,7 +50,7 @@ O = '\033[0;33m' # Orange
 B = '\033[1;34m' #Blue
 E = '\033[0m' # End
 
-print "\033]2;Arissploit Framework\a"
+os.system("printf '\033]2;Arissploit Framework\a'")
 def show_graphic():
     os.system("cat banner/banner.txt")
 show_graphic()
