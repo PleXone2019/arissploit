@@ -105,7 +105,6 @@ sleep 1
 clear
 cd install
 sleep 1
-echo -e ""$NV"Installing dependencies..."$CE""
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
 pip install -r requirements.txt
