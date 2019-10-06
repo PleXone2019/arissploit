@@ -20,9 +20,9 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	('target', ['192.168.1.2', 'target ip address.']),
-	('router', ['192.168.1.1', 'router ip address.']),
-	('interface', ['eth0', 'network interface name.']),
+	('target', ['192.168.1.2', 'Target IP address.']),
+	('router', ['192.168.1.1', 'Router IP address.']),
+	('interface', ['eth0', 'Network interface name.']),
 ))
 
 
