@@ -29,7 +29,7 @@ mcommands = [
 ["cowsay", "Arissploit Framework cowsay."],
 ["matrix", "Arissploit Framework matrix."],
 ["clear", "Clear terminal window."],
-["exit", "Exit from module."],
+["exit", "Exit from this module."],
 ["ds", "Arissploit Framework dark side."],
 ["sky", "Arissploit Framework sky."],
 ["scan", "Scan devices from LAN."],
