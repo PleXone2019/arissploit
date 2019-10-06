@@ -37,4 +37,4 @@ def run():
 	line_3 = colors.green + "Attack has been started, to stop attack press [enter]"
 	press_ak = input(line_3)
 	os.system('killall tcpkill')
-	printInfo("Attack has been stoped.")
+	printInfo("Attack stoped.")
