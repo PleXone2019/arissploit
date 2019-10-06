@@ -1,4 +1,3 @@
-
 from core.arissploit import *
 from core import colors
 import socket
@@ -8,10 +7,8 @@ from datetime import datetime
 conf = {
 	"name": "port_scanner",
 	"version": "1.0",
-	"shortdesc": "scan open ports",
-	"author": "entynetproject",
-	"github": "entynetproject",
-	"email": "entynetproject0@gmail.com",
+	"shortdesc": "Scan open ports.",
+	"author": "Entynetproject",
 	"initdate": "4.3.2016",
 	"lastmod": "3.1.2017",
 	"apisupport": True
@@ -19,9 +16,9 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	('target', ['google.com', 'target address']),
-	('first', [1, 'first port which will be scanned']),
-	('last', [100, 'last port which will be scanned']),
+	('target', ['google.com', 'Target address.']),
+	('first', [1, 'First port which will be scanned.']),
+	('last', [100, 'Last port which will be scanned.']),
 ))
 
 # Simple changelog
@@ -34,13 +31,13 @@ def run():
 	try:
 		targetip = socket.gethostbyname(variables['target'][0])
 	except(socket.gaierror):
-		printError('hostname could not be resolved')
-		return ModuleError("hostname could not be resolved")
+		printError('Hostname could not be resolved!')
+		return ModuleError("Hostname could not be resolved!")
 
 	socket.setdefaulttimeout(0.5)
 
 	print(colors.blue+"-" * 60)
-	print("please wait, scanning target", targetip)
+	print("Please wait, scanning target...", targetip)
 	print("-" * 60+colors.end)
 
 	t1 = datetime.now()
@@ -60,14 +57,14 @@ def run():
 			sock.close()
 
 	except(socket.gaierror):
-		printError('hostname could not be resolved')
-		return ModuleError("hostname could not be resolved")
+		printError('Hostname could not be resolved!')
+		return ModuleError("Hostname could not be resolved!")
 	except(socket.error):
-		printError(colors.red+"couldn't connect to server"+colors.end)
-		return ModuleError("couldn't connect to server")
+		printError(colors.red+"Couldn't connect to server!"+colors.end)
+		return ModuleError("Couldn't connect to server!")
 	except(ValueError):
-		printError("port value must be integer")
-		return ModuleError("port value must be integer")
+		printError("Port value must be integer!")
+		return ModuleError("Port value must be integer!")
 
 	# Checking the time again
 	t2 = datetime.now()
@@ -76,5 +73,5 @@ def run():
 	total =  t2 - t1
 
 	# Printing the information to screen
-	printInfo('scanning Completed in: '+ str(total))
+	printInfo('Scanning completed in: '+ str(total))
 	return open_ports
