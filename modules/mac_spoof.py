@@ -36,7 +36,7 @@ variables = OrderedDict((
 help_notes = colors.red+"This module will not work without root permissions, and ethtool!"+colors.end
 
 # Additional notes to options
-option_notes = colors.yellow+"You can generate fake_mac using 'random_mac' command.\n Use 'reset' command to end MAC spoof"+colors.end
+option_notes = colors.yellow+"You can generate fake_mac using 'random_mac' command.\nUse 'reset' command to end MAC spoof."+colors.end
 
 # Simple changelog
 changelog = "Version 1.0:\nrelease"
