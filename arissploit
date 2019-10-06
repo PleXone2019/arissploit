@@ -71,7 +71,7 @@ def fatalerror():
 	print(colors.red+"Unexpected error:")
 	traceback.print_exc()
 	print(colors.end)
-	forcetokr = input('Do you want to force to keep Arissploit Framework running [yes/no] ? ')
+	forcetokr = input('Do you want to force to keep Arissploit Framework running [yes/no]? ')
 	if forcetokr == 'yes':
 		main(0, None)
 	elif forcetokr == 'y':
