@@ -21,10 +21,10 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	("target", ["192.168.1.3", "Target's ip address."]),
-	("router", ["192.168.1.1", "Router's ip address."]),
+	("target", ["192.168.1.3", "Target ip address."]),
+	("router", ["192.168.1.1", "Router ip address."]),
 	("all", ["false", "Spoof every device [true/false]."]),
-	("interface", ["eth0", "Target's interface."])
+	("interface", ["eth0", "Target interface."])
 ))
 
 # Simple changelog
