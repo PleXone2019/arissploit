@@ -56,20 +56,53 @@
 
 # About arissploit modules
 
-> Exploits
+- `apache_users`
 
-    INFO: A computer program, piece of code,
-    or sequence of commands that exploit vulnerabilities 
-    in software and are used to carry out an attack on a 
-    computer system. The purpose of the attack can be as a 
-    seizure of control over the system, and the violation 
-    of its functioning!
+- `arp_dos`
 
-> Scanners
+- `arp_monitor`
 
-    INFO: The program that scans the specified internet resource, 
-    archive or website. Also network scanners can scan open ports or
-    your local network and IPs!
+- `arp_spoof`
+
+- `bluetooth_pod`
+
+- `cloudflare_resolver`
+
+- `dhcp_dos`
+
+- `dir_scanner`
+
+- `dns_spoof`
+
+- `email_bomber`
+
+- `hostname_resolver`
+
+- `mac_spoof`
+
+- `mitm`
+
+- `network_kill`
+
+- `pma_scanner`
+
+- `port_scanner`
+
+- `proxy_scout`
+
+- `whois`
+
+- `web_killer`
+
+- `web_scout`
+
+- `wifi_jammer`
+
+- `zip_cracker`
+
+- `rar_cracker`
+
+- `wordlist_gen`
 
 # Why arissploit framework?
 
