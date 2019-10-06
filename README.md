@@ -54,7 +54,25 @@
 
 > ./uninstall.sh
 
-# About arissploit modules
+# Why arissploit framework?
+
+> Arissploit is a free software
+
+    INFO: This is a good platform to 
+    start learning penetration testing!
+    
+> Simple UX/UI interface for beginners
+
+    INFO: Arissploit has simple UX/UI for beginners!
+    It is easy to understand and it will be easier 
+    for you to master the Arissploit Framework.
+    
+> A lot of tools for beginners
+
+    INFO: Arissploit includes 24 modules.
+    This is enough for beginners.
+    
+# All arissploit modules
 
 - `apache_users`
 
@@ -103,24 +121,6 @@
 - `rar_cracker`
 
 - `wordlist_gen`
-
-# Why arissploit framework?
-
-> Arissploit is a free software
-
-    INFO: This is a good platform 
-    to start exploring vulnerabilities!
-    
-> Simple UX/UI interface for beginners
-
-    INFO: Arissploit has simple UX/UI for beginners!
-    It is easy to understand and it will be easier 
-    for you to master the Arissploit Framework.
-    
-> A lot of tools for beginners
-
-    INFO: Arissploit includes 24 modules.
-    This is enough for beginners.
     
 # Terms of use
 
