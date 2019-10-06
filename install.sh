@@ -122,6 +122,18 @@ apt-get install libhtml-entities-numbered-perl
 apt-get install libhtml-parser-perl
 apt-get install libwww-perl
 apt-get install php
+apt-get install libdnet
+apt-get install ethtool
+apt-get install aircrack-ng
+apt-get install ettercap-text-only
+apt-get install dsniff
+apt-get install xterm
+apt-get install driftnet
+apt-get install tcpdump
+apt-get install libnetfilter-queue-dev
+apt-get install python3.5-dev
+apt-get install hcitool
+apt-get install sslstrip
 sleep 0.5
 pip install -r requirements.txt
 fi
@@ -144,6 +156,18 @@ pkg install python
 pkg install python2
 pkg install perl
 pkg install php
+pkg install libdnet
+pkg install ethtool
+pkg install aircrack-ng
+pkg install ettercap-text-only
+pkg install dsniff
+pkg install xterm
+pkg install driftnet
+pkg install tcpdump
+pkg install libnetfilter-queue-dev
+pkg install python3.5-dev
+pkg install hcitool
+pkg install sslstrip
 sleep 0.5
 pip install -r requirements.txt
 fi
@@ -172,6 +196,18 @@ apt-get install libhtml-entities-numbered-perl
 apt-get install libhtml-parser-perl
 apt-get install libwww-perl
 apt-get install php
+apt-get install libdnet
+apt-get install ethtool
+apt-get install aircrack-ng
+apt-get install ettercap-text-only
+apt-get install dsniff
+apt-get install xterm
+apt-get install driftnet
+apt-get install tcpdump
+apt-get install libnetfilter-queue-dev
+apt-get install python3.5-dev
+apt-get install hcitool
+apt-get install sslstrip
 sleep 0.5
 pip install -r requirements.txt
 fi
