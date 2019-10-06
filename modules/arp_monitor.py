@@ -1,15 +1,11 @@
-
-
 from core.arissploit import *
 from scapy.all import *
 
 conf = {
 	"name": "arp_monitor", # Module's name (should be same as file name)
 	"version": "1.0", # Module version
-	"shortdesc": "arp packet monitor", # Short description
-	"github": "entynetproject", # Author's github
+	"shortdesc": "Arp packet monitor.", # Short description
 	"author": "entynetproject", # Author
-	"email": "entynetproject0@gmail.com", # Email
 	"initdate": "31.12.2016", # Initial date
 	"lastmod": "31.12.2016", # Last modification
 	"apisupport": False, # Api support
@@ -22,7 +18,7 @@ variables = OrderedDict((
 ))
 
 # Additional notes to options
-option_notes = " this module doesn't have any options"
+option_notes = "This module doesn't have any options."
 
 # Simple changelog
 changelog = "Version 1.0:\nrelease"
@@ -35,7 +31,7 @@ def arp_display(pkt):
 
 # Run function
 def run():
-	printInfo("starting arp monitor...")
-	printInfo("ctrl + c to end")
+	printInfo("Starting arp monitor...")
+	printInfo("Ctrl + C to end.")
 	print(sniff(prn=arp_display, filter="arp", store=0))
 	printInfo("monitoring ended")
