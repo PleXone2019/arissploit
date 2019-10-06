@@ -34,7 +34,7 @@ def run():
 	commonports = ['80', '8080', '8888', '25', '3128', '8003', '9529', '8088', '8118', '4624', '9090', '82', '8090', '5555', '81', '7004', '9797', '7777', '8998', '9999', '10200']
 	variables['target'][0] = variables['target'][0].replace("http://", "").replace("https://", "")
 	if variables['target'][0] == 'google.com':
-		printError('not valid address')
+		printError('Not valid address!')
 		return
 	try:
 		try:
