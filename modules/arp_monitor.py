@@ -34,4 +34,4 @@ def run():
 	printInfo("Starting arp monitor...")
 	printInfo("Ctrl + C to end.")
 	print(sniff(prn=arp_display, filter="arp", store=0))
-	printInfo("monitoring ended")
+	printInfo("Monitoring ended!")
