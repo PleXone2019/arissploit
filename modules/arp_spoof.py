@@ -12,9 +12,7 @@ conf = {
 	"name": "arp_spoof",
 	"version": "1.0",
 	"shortdesc": "arp spoof",
-	"github": "entynetproject",
 	"author": "entynetproject",
-	"email": "entynetproject0@gmail.com",
 	"initdate": "10.3.2016",
 	"lastmod": "3.1.2017",
 	"apisupport": True,
@@ -24,20 +22,20 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	("target", ["192.168.1.3", "target ip address"]),
-	("router", ["192.168.1.1", "router ip address"]),
-	("all", ["false", "spoof every device [true/false]"]),
-	("interface", ["eth0", "target interface"])
+	("target", ["192.168.1.3", "Target's ip address."]),
+	("router", ["192.168.1.1", "Router's ip address."]),
+	("all", ["false", "Spoof every device [true/false]."]),
+	("interface", ["eth0", "Target's interface."])
 ))
 
 # Simple changelog
 changelog = "Version 1.0:\nrelease\nVersion 2.0:\nrewritten"
 
-option_notes = " interface only required when option: all = true"
+option_notes = "Interface only required when option: all = true"
 
 customcommands = {
-	"stop": "end arp spoof",
-	"get": "<status> get arp spoof status",
+	"stop": "End arp spoof.",
+	"get": "<status> get arp spoof status.",
 }
 
 class SpoofController(threading.Thread):
@@ -58,7 +56,7 @@ class SpoofController(threading.Thread):
 		try:
 			ip = netifaces.ifaddresses(variables["interface"][0])[2][0]['addr']
 		except(ValueError, KeyError):
-			printError("Invalid interface.")
+			printError("Invalid interface!")
 			self.controller.kill = True
 			self.controller.error = "Invalid interface!"
 			return
@@ -148,7 +146,7 @@ controller.kill = True
 def run():
 	printInfo("Setting up...")
 	controller.reset()
-	printInfo("ipv4 forwarding...")
+	printInfo("IPv4 forwarding...")
 	os.system('echo "1" >> /proc/sys/net/ipv4/ip_forward')
 
 	if variables["all"][0] == "true":
@@ -167,19 +165,19 @@ def run():
 def stop(args):
 	controller.kill = True
 	os.system('echo "0" >> /proc/sys/net/ipv4/ip_forward')
-	printInfo("arp spoof ended")
+	printInfo("Arp spoof ended!")
 
 def get(args):
 	if args[0] == "status":
 		if controller.error == None and controller.kill == False:
-			printInfo("attack is running")
-			return "attack is running"
+			printInfo("Attack is running...")
+			return "Attack is running..."
 		elif controller.error == None and controller.kill == True:
-			printInfo("attack in ended")
+			printInfo("Attack in ended!")
 			os.system('echo "0" >> /proc/sys/net/ipv4/ip_forward')
-			return "attack in ended"
+			return "Attack in ended!"
 		elif controller.error != None:
-			printError("faced error: "+controller.error)
+			printError("Faced error: "+controller.error)
 			os.system('echo "0" >> /proc/sys/net/ipv4/ip_forward')
 			return ModuleError(controller.error)
 
