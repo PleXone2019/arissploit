@@ -39,4 +39,4 @@ def run():
 	line_4 = colors.blue+"To stop attack press [enter]"+colors.end
 	fin = input(line_4)
 	os.system('killall ettercap')
-	printInfo("Attack stoped!")
+	printInfo("Attack stoped.")
