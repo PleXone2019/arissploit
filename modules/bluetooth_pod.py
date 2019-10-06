@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 import os
 import subprocess
@@ -9,7 +7,7 @@ conf = {
 	"name": "bluetooth_pod",
 	"version": "1.0",
 	"shortdesc": "Bluetooth ping of death.",
-	"author": "entynetproject",
+	"author": "Entynetproject",
 	"initdate": "24.2.2016",
 	"lastmod": "29.12.2016",
 	"apisupport": False,
@@ -21,7 +19,7 @@ conf = {
 
 # List of variables
 variables = OrderedDict((
-	('interface', ['hci0', 'Interface']),
+	('interface', ['hci0', 'Interface.']),
 	('bdaddr', ['none', 'Target bluetooth address.']),
 	('size', ['600', 'Size of packets (default 600).']),
 ))
