@@ -72,7 +72,7 @@
     INFO: Arissploit includes 24 modules.
     This is enough for beginners.
     
-# Arissploit modules list
+# Arissploit framework modules
 
 - `apache_users`
 
