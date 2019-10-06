@@ -73,9 +73,9 @@
     
 > A lot of different modules
 
-    INFO: Arissploit includes Wireless/
-    Bluetooth Modules, Web Modules, Network 
-    Modules, File Modules and Generator Modules.
+    INFO: Arissploit includes wireless modules,
+    bluetooth modules, web modules, network modules, 
+    file modules and generator modules.
     
 ![modules](https://user-images.githubusercontent.com/54115104/66274002-a13c8000-e882-11e9-8d4e-5afd57af8776.png)
     
