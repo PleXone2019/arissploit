@@ -25,7 +25,7 @@ variables = OrderedDict((
 ))
 
 # Additional notes to options
-option_notes = colors.green+'Sniffers\t description'+colors.end+'\n --------\t ------------\n dsniff\t\t Sniff all passwords.\n msgsnarf\t Sniff all text of victim messengers.\n urlsnarf\t Sniff victim links.\n driftnet\t Sniff victim images.'
+option_notes = colors.green+' Sniffers\t description'+colors.end+'\n --------\t ------------\n dsniff\t\t Sniff all passwords.\n msgsnarf\t Sniff all text of victim messengers.\n urlsnarf\t Sniff victim links.\n driftnet\t Sniff victim images.'
 
 # Simple changelog
 changelog = "Version 1.0:\nrelease"
