@@ -47,15 +47,6 @@ SA="$( cd ~ && pwd )"
 
 printf '\033]2;Arissploit Framework\a'
 
-{
-ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
-} &> /dev/null
-if [[ "$ASESR" = "" ]]
-then 
-sleep 1
-exit
-fi
-
 cd ~
 if [[ -d ~/arissploit ]]
 then
