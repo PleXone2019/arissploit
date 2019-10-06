@@ -8955,5 +8955,5 @@ def run():
 				printWarning("[%s] ... [%s %s]" % (path, res.status, res.reason))
 		return paths_found
 	except(socket.gaierror):
-		printError("host is down")
-		return ModuleError("host is down")
+		printError("Host is down!")
+		return ModuleError("Host is down!")
