@@ -24,7 +24,7 @@ variables = OrderedDict((
 ))
 
 # Additional help notes
-help_notes = colors.red+"This module will not work without root permission!\n this doesn't work if target refuses from arp request!"+colors.end
+help_notes = colors.red+"This module will not work without root permission!\n This doesn't work if target refuses from arp request!"+colors.end
 
 #simple changelog
 changelog = "Version 1.0:\nrelease"
