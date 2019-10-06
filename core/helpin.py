@@ -1,8 +1,8 @@
 
 commands = [
 ["check module [module]", "Check selected module."],
-["use [module]", "Load selected module."],
 ["show modules", "List all modules."],
+["use [module]", "Load selected module."],
 ["version", "Show Arissploit Framework version."],
 ["update", "Update Arissploit Framework."],
 ["cowsay", "Arissploit Framework cowsay."],
