@@ -8,7 +8,7 @@ conf = {
 	"name": "arp_dos",
 	"version": "1.0",
 	"shortdesc": "Arp cache denial of service attack.",
-	"author": "entynetproject",
+	"author": "Entynetproject",
 	"initdate": "3.3.2016",
 	"lastmod": "31.12.2016",
 	"needroot": 1,
