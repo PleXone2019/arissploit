@@ -60,9 +60,8 @@ if [[ -f ~/arissploit/arissploit.py ]]
 then
 sleep 1
 cd ~/arissploit 
-trap '' INT TSTP
-trap '' 2
-python arissploit.py
+chmod +x arissploit
+./arissploit
 else
 cd ~
 if [[ -d ~/arissploit ]]
@@ -73,13 +72,15 @@ cd ~
 git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
 cd arissploit
-python arissploit.py
+chmod +x arissploit
+./arissploit
 else
 cd ~
 {
 git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
 cd arissploit
-python arissploit.py
+chmod +x arissploit
+./arissploit
 fi
 fi
