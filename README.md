@@ -65,16 +65,17 @@
     INFO: This is a good platform to 
     start learning penetration testing!
     
-> Simple UX/UI interface for beginners
+> Simple UX/UI interface
 
-    INFO: Arissploit has simple UX/UI for beginners!
-    It is easy to understand and it will be easier 
+    INFO: Arissploit has simple UX/UI! It 
+    is easy to understand and it will be easier 
     for you to master the Arissploit Framework.
     
-> A lot of tools for beginners
+> A lot of different modules
 
-    INFO: Arissploit includes 24 modules.
-    This is enough for beginners.
+    INFO: Arissploit includes Wireless/
+    Bluetooth Modules, Web Modules, Network 
+    Modules, File Modules and Generator Modules.
     
 ![modules](https://user-images.githubusercontent.com/54115104/66274002-a13c8000-e882-11e9-8d4e-5afd57af8776.png)
     
