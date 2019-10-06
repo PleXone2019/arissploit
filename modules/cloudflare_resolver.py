@@ -8,10 +8,8 @@ import dns
 conf = {
 	"name": "cloudflare_resolver",
 	"version": "2.2.1",
-	"shortdesc": "tries to resolve ip from subdomains",
-	"author": "entynetproject",
-	"github": "entynetproject",
-	"email": "entynetproject0@gmail.com",
+	"shortdesc": "Tries to resolve ip from subdomains.",
+	"author": "Entynetproject",
 	"initdate": "24.2.2016",
 	"lastmod": "3.1.2017",
 	"apisupport": True
@@ -19,9 +17,9 @@ conf = {
 
 # List of variables
 variables = OrderedDict((
-	('target', ['google.com', 'target address']),
-	('pos', ['false', 'print only success[true/false]']),
-	('timeout', ['0.5', 'timeout'])
+	('target', ['google.com', 'Target address.']),
+	('pos', ['false', 'Print only success [true/false].']),
+	('timeout', ['0.5', 'Timeout.'])
 ))
 
 # Simple changelog
@@ -49,9 +47,9 @@ def run():
 		print(colors.green+"[-------------------------]"+colors.end)
 		apianswer[variables['target'][0]] = orgip
 	except(dns.exception.Timeout):
-		print(colors.red+"[-] Error : Host is Down !"+colors.end)
+		print(colors.red+"[-] Error : Host is down!"+colors.end)
 	except dns.resolver.NoAnswer:
-		print(colors.red+"[?] The DNS response does not contain an answer to the question"+colors.end)
+		print(colors.red+"[?] The DNS response does not contain an answer to the question."+colors.end)
 	for i in sub:
 		host = i+'.'+variables['target'][0]
 		try:
@@ -67,6 +65,6 @@ def run():
 				print(colors.red+"[-] %s : N/A"%host+colors.end)
 		except dns.resolver.NoAnswer:
 			if variables['pos'][0] != 'true':
-				print(colors.red+"[?] The DNS response does not contain an answer to the question"+colors.end)
+				print(colors.red+"[?] The DNS response does not contain an answer to the question."+colors.end)
 
 	return apianswer
