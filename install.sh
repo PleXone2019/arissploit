@@ -67,7 +67,7 @@ cd arissploit
 chmod +x install.sh
 fi
 
-printf '\033]2;Arissploit INSTALLER\a'
+printf '\033]2;arissploit INSTALLER\a'
 clear
 cat ~/arissploit/banner/banner.txt
 echo -e "\033[1;33mBy Arissploit Team\033[0m"
