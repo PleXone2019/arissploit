@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 import http.client
 import socket
