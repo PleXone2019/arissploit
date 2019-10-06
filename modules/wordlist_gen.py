@@ -10,10 +10,8 @@ from core import getpath
 conf = {
 	"name": "wordlist_gen", # Module's name (should be same as file name)
 	"version": "1.0", # Module version
-	"shortdesc": "word list generator", # Short description
-	"github": "entynetproject", # Author's github
-	"author": "entynetproject", # Author
-	"email": "entynetproject0@gmail.com", # Email
+	"shortdesc": "Word list generator.", # Short description
+	"author": "Entynetproject", # Author
 	"initdate": "26.12.2016", # Initial date
 	"lastmod": "3.1.2017",
 	"apisupport": True, # Api support
@@ -21,20 +19,20 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	("output", ["none", "output file"]),
-	("chars", ["num_", "chars"]),
-	("maxlen", [4, "max length of word (int)"]),
-	("minlen", [3, "min length or word (int)"]),
+	("output", ["none", "Output file."]),
+	("chars", ["num_", "Chars."]),
+	("maxlen", [4, "Max length of word (int)."]),
+	("minlen", [3, "Min length or word (int)."]),
 ))
 
 # Additional notes to options
-option_notes = " values  chars\n ------  ----- \n sc_  ->  a-z\n bc_  ->  A-Z\n num_ ->  0-9\n spc_ ->  !@#$%^&*?,()-=+[]/;"
+option_notes = "Values  chars\n ------  ----- \n sc_  ->  a-z\n bc_  ->  A-Z\n num_ ->  0-9\n spc_ ->  !@#$%^&*?,()-=+[]/;"
 
 # Simple changelog
 changelog = "Version 1.0:\nrelease"
 
 customcommands = {
-	"addchar": "add more chars",
+	"addchar": "Add more chars.",
 }
 
 addchr = ""
@@ -102,14 +100,14 @@ def run():
 	try:
 		variables["maxlen"][0] = int(variables["maxlen"][0])
 	except ValueError:
-		printError("invalid maxlen")
-		return ModuleError("invalid maxlen")
+		printError("Invalid maxlen!")
+		return ModuleError("Invalid maxlen!")
 
 	try:
 		variables["minlen"][0] = int(variables["minlen"][0])
 	except ValueError:
-		printError("invalid minlen")
-		return ModuleError("invalid minlen")
+		printError("Invalid minlen!")
+		return ModuleError("Invalid minlen!")
 
 	sh = StatHolder()
 	sh.reset()
@@ -118,28 +116,28 @@ def run():
 	d = variables["maxlen"][0] - variables["minlen"][0]
 
 	if d < 0:
-		printError("minlen can't be greater than minlen")
-		return ModuleError("minlen can't be greater than minlen")
+		printError("Minlen can't be greater than minlen!")
+		return ModuleError("Minlen can't be greater than minlen!")
 	for i in range(variables["minlen"][0], variables["maxlen"][0]+1):
 		t = Worker(sh, i+1, i, chars)
 		threads.append(t)
 		t.start()
 
-	printInfo(colors.bold+"generating..."+colors.end)
+	printInfo(colors.bold+"Generating..."+colors.end)
 	try:
 		for thread in threads:
 			thread.join()
 	except KeyboardInterrupt:
 		sh.kill = True
-		printInfo("word generator terminated")
+		printInfo("Word generator terminated!")
 
-	printSuccess("word list genereted")
+	printSuccess("Word list genereted.")
 
 def addchar(args):
 	global addchr
 	try:
 		addchr += args[0]
-		return "[suf] chars added"
+		return "[suf] Chars added."
 	except IndexError:
-		printError("args not given")
-		return ModuleError("args not given")
+		printError("Args not given!")
+		return ModuleError("Args not given!")
