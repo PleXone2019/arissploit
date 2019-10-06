@@ -30,10 +30,9 @@
 
 # About arissploit framework
 
-    INFO: Arissploit Framework is a database of exploits, viruses 
-    and tools for penetration testing. Arissploit is a powerful 
-    framework includes a lot of tools for beginners. You can explore 
-    kernel vulnerabilities, network vulnerabilities and etc.
+    INFO: Arissploit is simple framework that has been made for penetration 
+    testing tools. Arissploit Framework offers simple structure, basic CLI, 
+    and useful features for penetration testing tools developing.
 
 # How to install arissploit
 
@@ -44,8 +43,8 @@
 > ./install.sh
 
     INFO: After running install.sh you should
-    select your arch (amd/intel/arm), amd/intel - all computer OS,
-    arm - android termux or jailbroken iOS.
+    select your arch (amd/intel/arm), amd/intel - all 
+    computer OS, arm - android termux or jailbroken iOS.
 
 # How to uninstall arissploit
 
@@ -65,12 +64,6 @@
     computer system. The purpose of the attack can be as a 
     seizure of control over the system, and the violation 
     of its functioning!
-
-> Viruses
-
-    INFO: A computer program that can harm a computer 
-    by displaying messages, destroying files, or completely 
-    removing an operating system!
 
 > Scanners
 
@@ -93,8 +86,7 @@
     
 > A lot of tools for beginners
 
-    INFO: Arissploit includes the following modules:
-    14 exploits - 10 scanners, 16 posts - 38 viruses,
+    INFO: Arissploit includes 24 modules.
     This is enough for beginners.
     
 # Terms of use
@@ -106,7 +98,7 @@
 # Arissploit BSD license
 
 
-       Arissploit Framework - database of exploits, viruses, etc.
+       Arissploit Framework - database of exploits, scanners, etc.
        Copyright (C) 2019 Arissploit Team
 
 
