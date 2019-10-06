@@ -412,7 +412,7 @@ class Cmethods:
 		except IndexError:
 			raise UnknownCommand("Unkown command!")
 
-	def touchingsky(self, args):
+	def sky(self, args):
 		core.touchingsky.main()
 
 	def update(self, args):
