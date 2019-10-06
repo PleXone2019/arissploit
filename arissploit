@@ -1,0 +1,107 @@
+#!/usr/bin/env python3
+
+try:
+
+	# Import python modules
+	import traceback
+	import sys
+	import logging
+	import getopt
+	import csv
+
+	# Check python version
+	req_version = (3,5)
+	cur_version = sys.version_info
+	if cur_version < req_version:
+		print('Python3.5 or greater is recommended.')
+
+	# Disable scapy warning
+	logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
+
+	# Import getpath for lib path
+	from core import getpath
+
+	# Append lib path
+	sys.path.append(getpath.lib())
+
+	# Import core modules
+	from core import colors
+	from core import header
+	from core import hftest
+	from core import shell
+	from core import scriptio
+	from core import getpath
+
+	# Print header
+	print(header.arissploit)
+	header.print_info()
+
+except KeyboardInterrupt:
+	sys.exit(0)
+
+# Exception handling
+
+def fatalerror():
+	print(colors.red+"Unexpected error:")
+	traceback.print_exc()
+	print(colors.end)
+	forcetokr = input('Do you want to force to keep Arissploit Framework running [yes/no] ? ')
+	if forcetokr == 'yes':
+		main(0, None)
+	elif forcetokr == 'y':
+		main(0, None)
+
+# Start up shell
+
+try:
+	def main(scripting, scf):
+		try:
+			if scripting == 1:
+				scriptio.run(scf)
+
+			else:
+				shell.run()
+
+		except SystemExit as e:
+			sys.exit(e)
+
+		except:
+			fatalerror()
+
+	if __name__ == '__main__':
+		scripting = 0
+		scf = ""
+
+		try:
+			opts, args = getopt.getopt(sys.argv[1:], 's:t:')
+			for opt, arg in opts:
+				if opt in ('-t'):
+					if arg == 'challenge':
+						hftest.challenge()
+					else:
+						print(colors.red+'Invalid arguments!'+colors.end)
+
+				if opt in ('-s'):
+					try:
+						scriptfile = open(getpath.scripts()+arg+'.hfs', 'r')
+						reader = csv.reader(scriptfile)
+						scf = [row for row in reader]
+						scripting = 1
+						print(colors.green+"Entering scripting mode..."+colors.end)
+					except FileNotFoundError:
+						print(colors.red+'Error: script not found!'+colors.end)
+		except getopt.GetoptError:
+			print(colors.red+'Invalid arguments!'+colors.end)
+		main(scripting, scf)
+
+# Exceptions
+
+except KeyboardInterrupt:
+	print()
+
+except SystemExit as e:
+	print(colors.bold+"Exiting..."+colors.end)
+	sys.exit(e)
+
+except:
+	fatalerror()
