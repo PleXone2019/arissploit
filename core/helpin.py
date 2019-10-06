@@ -1,5 +1,6 @@
 
 commands = [
+["check module [module]", "Check selected module."],
 ["use [module]", "Load selected module."],
 ["show modules", "List all modules."],
 ["version", "Show Arissploit Framework version."],
@@ -16,8 +17,7 @@ commands = [
 ["os [command]","Run terminal command."],
 ["reload [module]", "Reload selected module."],
 ["list dependencies", "List every dependencies."],
-["new module [module]", "Create new module."],
-["check module [module]", "Check selected module."]
+["new module [module]", "Create new module."]
 ]
 
 mcommands = [
