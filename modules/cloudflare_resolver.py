@@ -1,5 +1,3 @@
-
-
 from core import colors
 from core.arissploit import *
 from dns import resolver
