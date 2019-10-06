@@ -1,5 +1,3 @@
-
-
 import http.client
 import socket
 from core.arissploit import *
@@ -7,10 +5,8 @@ from core.arissploit import *
 conf = {
 	"name": "dir_scanner",
 	"version": "1.1",
-	"shortdesc": "scans dirs from website",
-	"author": "entynetproject",
-	"github": "entynetproject",
-	"email": "entynetproject0@gmail.com",
+	"shortdesc": "Scans dirs from website.",
+	"author": "Entynetproject",
 	"initdate": "24.2.2016",
 	"lastmod": "3.1.2017",
 	"apisupport": True
@@ -18,18 +14,18 @@ conf = {
 
 # List of variables
 variables = OrderedDict((
-	('target', ['google.com', 'target address']),
-	('timeout', ['10', 'timeout (default: 10)']),
-	('pos', ['false', 'print only success[true/false]']),
+	('target', ['google.com', 'Target address.']),
+	('timeout', ['10', 'Timeout (default: 10).']),
+	('pos', ['false', 'Print only success[true/false].']),
 ))
 
 # Simple changelog
-changelog = "Version 1.0:\nrelease\n\nVersion 1.1:\n+ added timeout variable"
+changelog = "Version 1.0:\nrelease\n\nVersion 1.1:\n+ added timeout variable."
 
 def run():
 	variables['target'][0] = variables['target'][0].replace("http://", "")
 	variables['target'][0] = variables['target'][0].replace("https://", "")
-	printInfo("your target : " + variables['target'][0])
+	printInfo("Your target: " + variables['target'][0])
 	paths = ['index',
 'images',
 'download',
@@ -220587,8 +220583,8 @@ def run():
 				try:
 					conn.timeout = float(variables['timeout'][0])
 				except ValueError:
-					printError('invalid timeout')
-					return ModuleError("invalid timeout")
+					printError('Invalid timeout!')
+					return ModuleError("Invalid timeout!")
 				conn.request("GET", path)
 				res = conn.getresponse()
 				if(res.status==200):
@@ -220601,8 +220597,8 @@ def run():
 				try:
 					conn.timeout = float(variables['timeout'][0])
 				except ValueError:
-					printError('invalid timeout')
-					return ModuleError("invalid timeout")
+					printError('Invalid timeout!')
+					return ModuleError("Invalid timeout!")
 				conn.request("GET", path)
 				res = conn.getresponse()
 				if(res.status==200):
@@ -220611,8 +220607,8 @@ def run():
 				else:
 					printWarning("[%s] ... [%s %s]" % (path, res.status, res.reason))
 	except (socket.gaierror):
-		printError("target "+variables['target'][0]+" not found")
-		return ModuleError("not found")
+		printError("target "+variables['target'][0]+" not found!")
+		return ModuleError("Not found!")
 	except (socket.timeout):
-		printError("time out "+variables['target'][0])
-		return ModuleError("timeout")
+		printError("Timeout: "+variables['target'][0])
+		return ModuleError("Timeout!")
