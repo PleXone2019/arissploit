@@ -23,7 +23,7 @@ changelog = "Version 1.0:\nrelease"
 def run():
 	variables['target'][0] = variables['target'][0].replace("http://", "")
 	variables['target'][0] = variables['target'][0].replace("https://", "")
-	printInfo("your target : " + variables['target'][0])
+	printInfo("Your target: " + variables['target'][0])
 	printInfo("Loading path list... please wait...")
 	paths = ['/phpMyAdmin/',
 '/phpmyadmin/',
