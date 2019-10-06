@@ -88,7 +88,7 @@ class Cmethods:
 		else:
 			sys.stderr.write("\x1b[2J\x1b[H")
 
-	def cl(self, args):
+	def os(self, args):
 		os.system(' '.join(args))
 
 	def help(self, args):
