@@ -56,12 +56,12 @@ sleep 1
 exit
 fi
 
-if [[ -f ~/arissploit/arissploit.py ]]
+if [[ -f ~/arissploit/arissploit ]]
 then
 sleep 1
 cd ~/arissploit 
 chmod +x arissploit
-./arissploit
+python3 arissploit
 else
 cd ~
 if [[ -d ~/arissploit ]]
@@ -73,7 +73,7 @@ git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
 cd arissploit
 chmod +x arissploit
-./arissploit
+python3 arissploit
 else
 cd ~
 {
@@ -81,6 +81,6 @@ git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
 cd arissploit
 chmod +x arissploit
-./arissploit
+python3 arissploit
 fi
 fi
