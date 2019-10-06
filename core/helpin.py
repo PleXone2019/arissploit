@@ -24,8 +24,6 @@ mcommands = [
 ["set [option] [value]", "Set value to option."],
 ["show options", "Show module options."],
 ["show modules", "List all modules."],
-["use [module]", "Load selected module."],
-["show modules", "List all modules."],
 ["version", "Show Arissploit Framework version."],
 ["update", "Update Arissploit Framework."],
 ["cowsay", "Arissploit Framework cowsay."],
