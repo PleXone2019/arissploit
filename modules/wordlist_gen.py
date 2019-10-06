@@ -8,7 +8,7 @@ from core import getpath
 conf = {
 	"name": "wordlist_gen", # Module's name (should be same as file name)
 	"version": "1.0", # Module version
-	"shortdesc": "Word list generator.", # Short description
+	"shortdesc": "Wordlist generator.", # Short description
 	"author": "Entynetproject", # Author
 	"initdate": "26.12.2016", # Initial date
 	"lastmod": "3.1.2017",
