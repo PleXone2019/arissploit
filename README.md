@@ -79,56 +79,6 @@
     
 ![modules](https://user-images.githubusercontent.com/54115104/66274002-a13c8000-e882-11e9-8d4e-5afd57af8776.png)
     
-# Arissploit framework modules
-
-- `apache_users`
-
-- `arp_dos`
-
-- `arp_monitor`
-
-- `arp_spoof`
-
-- `bluetooth_pod`
-
-- `cloudflare_resolver`
-
-- `dhcp_dos`
-
-- `dir_scanner`
-
-- `dns_spoof`
-
-- `email_bomber`
-
-- `hostname_resolver`
-
-- `mac_spoof`
-
-- `mitm`
-
-- `network_kill`
-
-- `pma_scanner`
-
-- `port_scanner`
-
-- `proxy_scout`
-
-- `whois`
-
-- `web_killer`
-
-- `web_scout`
-
-- `wifi_jammer`
-
-- `zip_cracker`
-
-- `rar_cracker`
-
-- `wordlist_gen`
-    
 # Terms of use
 
     This tool is only for educational purposes only.
