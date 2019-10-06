@@ -5,7 +5,7 @@ conf = {
 	"name": "arp_monitor", # Module's name (should be same as file name)
 	"version": "1.0", # Module version
 	"shortdesc": "Arp packet monitor.", # Short description
-	"author": "entynetproject", # Author
+	"author": "Entynetproject", # Author
 	"initdate": "31.12.2016", # Initial date
 	"lastmod": "31.12.2016", # Last modification
 	"apisupport": False, # Api support
