@@ -19,4 +19,4 @@ def print_info():
 	print("\t" + colors.bold + "API"+colors.end+"\t[ "+info.apiversion+"       ]"+colors.end)
 	print("\t" + colors.bold + "Date"+colors.end+"\t[ "+info.update_date+"          ]"+colors.end)
 	print("\t" + colors.bold + "Modules "+colors.end+"[ "+count.mod+" modules"+"        ]"+colors.end)
-	print("")
+	print("\n")
