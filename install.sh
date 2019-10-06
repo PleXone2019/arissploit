@@ -69,7 +69,7 @@ fi
 
 printf '\033]2;Arissploit INSTALLER\a'
 clear
-cat ~/arissploit/banner/banner1.txt
+cat ~/arissploit/banner/banner.txt
 echo -e "\033[1;33mBy Arissploit Team\033[0m"
 sleep 3
 echo -e "More on our site:"
