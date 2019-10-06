@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 import http.client
 import socket
@@ -7,10 +5,8 @@ import socket
 conf = {
 	"name": "pma_scanner",
 	"version": "1.0",
-	"shortdesc": "PHPMyAdmin login page scanner",
-	"author": "entynetproject",
-	"github": "entynetproject",
-	"email": "entynetproject0@gmail.com",
+	"shortdesc": "PHPMyAdmin login page scanner.",
+	"author": "Entynetproject",
 	"initdate": "1.3.2016",
 	"lastmod": "3.1.2017",
 	"apisupport": True
@@ -18,7 +14,7 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	('target', ['google.com', 'target address']),
+	('target', ['google.com', 'Target address.']),
 ))
 
 # Simple changelog
@@ -28,7 +24,7 @@ def run():
 	variables['target'][0] = variables['target'][0].replace("http://", "")
 	variables['target'][0] = variables['target'][0].replace("https://", "")
 	printInfo("your target : " + variables['target'][0])
-	printInfo("loading path list... please wait...")
+	printInfo("Loading path list... please wait...")
 	paths = ['/phpMyAdmin/',
 '/phpmyadmin/',
 '/PMA/',
@@ -115,7 +111,7 @@ def run():
 '/webdb/',
 '/mysqladmin/',
 '/mysql-admin/',]
-	printInfo("starting scan...")
+	printInfo("Starting scan...")
 	paths_found = []
 	try:
 		for path in paths:
@@ -130,8 +126,8 @@ def run():
 				printWarning("[%s] ... [%s %s]" % (path, res.status, res.reason))
 		return paths_found
 	except(socket.gaierror):
-		printError("host is down!")
-		return ModuleError("host is down")
+		printError("Host is down!")
+		return ModuleError("Host is down!")
 	except socket.timeout:
-		printError("timeout")
-		return ModuleError("timeout")
+		printError("Timeout!")
+		return ModuleError("Timeout!")
