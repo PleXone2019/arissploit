@@ -9,7 +9,6 @@ conf = {
 	"version": "1.0",
 	"shortdesc": "Arp cache denial of service attack.",
 	"author": "entynetproject",
-	"email": "entynetproject0@gmail.com",
 	"initdate": "3.3.2016",
 	"lastmod": "31.12.2016",
 	"needroot": 1,
