@@ -19,7 +19,7 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	('my_username', ['username', 'Username for login'.]),
+	('my_username', ['username', 'Username for login.']),
 	('my_password', ['yourpassword', 'Password for login.']),
 	('smtp', ['smtp.server.com', 'SMTP server.']),
 	('smtp_port', [587, 'SMTP server port (must be int).']),
