@@ -1,4 +1,3 @@
-
 from core.arissploit import *
 from core import colors
 from scapy.all import *
@@ -11,7 +10,7 @@ from core.exceptions import *
 conf = {
 	"name": "arp_spoof",
 	"version": "1.0",
-	"shortdesc": "arp spoof",
+	"shortdesc": "Arp spoof.",
 	"author": "entynetproject",
 	"initdate": "10.3.2016",
 	"lastmod": "3.1.2017",
