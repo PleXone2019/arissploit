@@ -16,7 +16,7 @@ commands = [
 ]
 
 mcommands = [
-["show options", "Show module's options."],
+["show options", "Show module options."],
 ["show modules", "List all modules."],
 ["set [option] [value]", "Set value to option."],
 ["run", "Run this module."],
@@ -28,5 +28,5 @@ mcommands = [
 ["cl [command]", "Run terminal command."],
 ["reload", "Reload this module."],
 ["redb", "Add this module to database."],
-["list dependencies", "List this module's dependencies."]
+["list dependencies", "List this module dependencies."]
 ]
