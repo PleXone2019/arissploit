@@ -28,8 +28,6 @@
  </a>
 </p>
 
-![1](https://user-images.githubusercontent.com/43011806/59859882-4a1fa780-9386-11e9-9d61-44c49645ee2b.png)
-
 # About arissploit framework
 
     INFO: Arissploit Framework is a database of exploits, viruses 
@@ -81,8 +79,6 @@
     INFO: The program that scans the specified internet resource, 
     archive or website. Also network scanners can scan open ports or
     your local network and IPs!
-    
-![2](https://user-images.githubusercontent.com/43011806/59859441-5f480680-9385-11e9-967b-e5a6e6788c2f.png)
 
 # Why arissploit framework?
 
