@@ -6,7 +6,7 @@ conf = {
 	"name": "apache_users", # Module's name (should be same as file's name)
 	"version": "1.0", # Module version
 	"shortdesc": "Scan directory of apache users.", # Short description
-	"author": "entynetproject", # Author
+	"author": "Entynetproject", # Author
 	"initdate": "1.3.2016",
 	"lastmod": "3.1.2017",
 	"apisupport": True
