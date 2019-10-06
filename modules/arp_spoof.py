@@ -11,7 +11,7 @@ conf = {
 	"name": "arp_spoof",
 	"version": "1.0",
 	"shortdesc": "Arp spoof.",
-	"author": "entynetproject",
+	"author": "Entynetproject",
 	"initdate": "10.3.2016",
 	"lastmod": "3.1.2017",
 	"apisupport": True,
