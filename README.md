@@ -60,7 +60,7 @@
 
 # Why arissploit framework?
 
-> Arissploit is a free software
+> Arissploit is free
 
     INFO: This is a good platform to start learning 
     penetration testing tools development for free!
