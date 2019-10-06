@@ -18,7 +18,7 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	("target", ["google.com", "Target address."]),
+	("target", ["google.com", "target address."]),
 ))
 
 # Simple changelog
