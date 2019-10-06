@@ -24,7 +24,7 @@ variables = OrderedDict((
 ))
 
 # Additional notes to options
-option_notes = colors.green+" Values  Chars\n ------  ----- \n sc_  ->  a-z\n bc_  ->  A-Z\n num_ ->  0-9\n spc_ ->  !@#$%^&*?,()-=+[]/;"
+option_notes = colors.green+" Values  Chars" + colors.end+"\n ------  ----- \n sc_  ->  a-z\n bc_  ->  A-Z\n num_ ->  0-9\n spc_ ->  !@#$%^&*?,()-=+[]/;"
 
 # Simple changelog
 changelog = "Version 1.0:\nrelease"
