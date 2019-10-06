@@ -45,7 +45,7 @@ B="\033[1;34m" #Blue
 CE="\033[0m"
 SA="$( cd ~ && pwd )"
 
-print "\033]2;Arissploit Framework\a"
+printf '\033]2;Arissploit Framework\a'
 
 {
 ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
@@ -61,7 +61,7 @@ then
 sleep 1
 cd ~/arissploit 
 chmod +x arissploit
-python3 arissploit
+./arissploit
 else
 cd ~
 if [[ -d ~/arissploit ]]
@@ -73,7 +73,7 @@ git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
 cd arissploit
 chmod +x arissploit
-python3 arissploit
+./arissploit
 else
 cd ~
 {
@@ -81,6 +81,6 @@ git clone https://github.com/entynetproject/arissploit.git
 } &> /dev/null
 cd arissploit
 chmod +x arissploit
-python3 arissploit
+./arissploit
 fi
 fi
