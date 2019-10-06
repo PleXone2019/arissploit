@@ -7,8 +7,7 @@ import socket
 conf = {
 	"name": "apache_users", # Module's name (should be same as file's name)
 	"version": "1.0", # Module version
-	"shortdesc": "scan directory of apache users", # Short description
-	"github": "entynetproject", # Author's github
+	"shortdesc": "Scan directory of apache users.", # Short description
 	"author": "entynetproject", # Author
 	"email": "entynetproject@gmail.com",
 	"initdate": "1.3.2016",
