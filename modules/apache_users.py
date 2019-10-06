@@ -10,7 +10,7 @@ conf = {
 	"shortdesc": "scan directory of apache users", # Short description
 	"github": "entynetproject", # Author's github
 	"author": "entynetproject", # Author
-	"email": "entynetproject0@gmail.com",
+	"email": "entynetproject@gmail.com",
 	"initdate": "1.3.2016",
 	"lastmod": "3.1.2017",
 	"apisupport": True
@@ -18,7 +18,7 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	("target", ["google.com", "target address"]),
+	("target", ["google.com", "Target address."]),
 ))
 
 # Simple changelog
@@ -27,8 +27,8 @@ changelog = "Version 1.0:\nrelease"
 def run():
 	variables['target'][0] = variables['target'][0].replace("http://", "")
 	variables['target'][0] = variables['target'][0].replace("https://", "")
-	printInfo("your target : " + variables['target'][0])
-	printInfo("loading path list...")
+	printInfo("Your target : " + variables['target'][0])
+	printInfo("Loading path list...")
 	paths = ['~root',
 '~toor',
 '~bin',
