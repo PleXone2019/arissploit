@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 from core import colors
 import threading, queue
