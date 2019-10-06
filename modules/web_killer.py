@@ -17,7 +17,7 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	('interface', ['wlan0', 'Network interface name'.]),
+	('interface', ['wlan0', 'Network interface name.']),
 	('target', ['google.com', 'Target address.']),
 
 ))
