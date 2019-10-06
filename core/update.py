@@ -49,7 +49,7 @@ def check_for_updates():
 		print(colors.red+"error: "+str(error)+colors.end)
 
 def update():
-	answer = input("Do you want to start update [yes/no] ? ")
+	answer = input("Do you want to start update [yes/no]? ")
 
 	if answer != "yes" and answer != "y":
 		return
