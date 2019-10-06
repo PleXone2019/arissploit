@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 
 # Info about the module
@@ -7,10 +5,8 @@ from core.arissploit import *
 conf = {
 	"name": "test", # Module's name (should be same as file's name)
 	"version": "1.0", # Module version
-	"shortdesc": "only test", # Short description
-	"author": "entynetproject", # Author
-	"github": "entynetproject", # Author's github
-	"email": "entynetproject0@gmail.com", # Email
+	"shortdesc": "Only test.", # Short description
+	"author": "Entynetproject", # Author
 	"initdate": "24.2.2016", # Initial date
 	"lastmod": "29.12.2016",
 	"apisupport": True, # Api support
@@ -20,11 +16,11 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	("value", [0, "description"]),
+	("value", [0, "Description."]),
 ))
 
 customcommands = {
-	"test": "test"
+	"test": "Test."
 }
 
 # Simple changelog
@@ -33,8 +29,8 @@ changelog = "Version 1.0:\nrelease"
 def run():
 	print(variables['value'][0])
 	print(variables['value'][1])
-	printWarning("warning")
+	printWarning("Warning!")
 	return variables
 
 def test(args):
-	return "ok"
+	return "Ok."
