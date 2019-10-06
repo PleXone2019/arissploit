@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 import rarfile
 import threading, queue
@@ -10,10 +8,8 @@ import sys
 conf = {
 	"name": "rar_cracker", # Module's name (should be same as file name)
 	"version": "1.0", # Module version
-	"shortdesc": "rar file brute-force attack using word list", # Short description
-	"github": "entynetproject", # Author's github
-	"author": "entynetproject", # Author
-	"email": "entynetproject0@gmail.com", # Email
+	"shortdesc": "Rar file brute-force attack using word list.", # Short description
+	"author": "Entynetproject", # Author
 	"initdate": "25.12.2016", # Initial date
 	"lastmod": "3.1.2017",
 	"apisupport": True, # Api support
@@ -21,10 +17,10 @@ conf = {
 
 # List of the variables
 variables = OrderedDict((
-	("file", ["none", "target rar file"]),
-	("dict", ["none", "dictionary of words"]),
-	("tc", [8, "thread count (int)"]),
-	("exto", ["none", "extract directory"])
+	("file", ["none", "Target rar file."]),
+	("dict", ["none", "Dictionary of words."]),
+	("tc", [8, "Thread count (int)."]),
+	("exto", ["none", "Extract directory."])
 ))
 
 # Simple changelog
@@ -63,7 +59,7 @@ class Worker(threading.Thread):
 			rf = rarfile.RarFile(variables["file"][0])
 		
 		except FileNotFoundError:
-			self.pwdh.error = "rar file not found"
+			self.pwdh.error = "Rar file not found!"
 			return
 		for word in self.words:
 			if self.pwdh.pwd != None:
@@ -91,12 +87,12 @@ class Worker(threading.Thread):
 def run():
 	try:
 		wordlist = open(variables["dict"][0], "rb")
-		printInfo("reading word list...")
+		printInfo("Reading word list...")
 		words = wordlist.read().splitlines()
 	except FileNotFoundError:
-		printError("word list not found")
+		printError("Word list not found!")
 		return ModuleError("word list not found")
-	printInfo("brute-force attack started...")
+	printInfo("Brute-force attack started...")
 
 	pwdh = PwdHolder
 	pwdh.reset()
@@ -104,8 +100,8 @@ def run():
 	try:
 		u = int(variables["tc"][0])
 	except TypeError:
-		printError("invalid thread count")
-		return ModuleError("invalid thread count")
+		printError("Invalid thread count!")
+		return ModuleError("Invalid thread count!")
 	threads = []
 
 	for i in range(variables["tc"][0]):
@@ -113,16 +109,16 @@ def run():
 		threads.append(t)
 		t.start()
 		
-	printInfo("now cracking...")
+	printInfo("Now cracking...")
 	try:
 		for thread in threads:
 			thread.join()
 	except KeyboardInterrupt:
 		pwdh.kill = True
-		printInfo("brute-force attack terminated")
+		printInfo("Brute-force attack terminated!")
 
 	if pwdh.pwd != None:
-		printSuccess("password found: "+pwdh.pwd)
+		printSuccess("Password found: "+pwdh.pwd)
 		return pwdh.pwd
 
 	elif pwdh.error != None:
