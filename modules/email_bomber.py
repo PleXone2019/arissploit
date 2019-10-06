@@ -40,7 +40,7 @@ s_verbs = ["eats", "kicks", "gives", "treats", "meets with", "creates", "hacks",
 p_verbs = ["eat", "kick", "give", "treat", "meet with", "create", "hack", "configure", "spy on", "retard", "meow on", "flee from", "try to automate", "explode"]
 infinitives = ["to make a pie.", "for no apparent reason.", "because the sky is green.", "for a disease.", "to be able to make toast explode.", "to know more about archeology.", "because the sky is blue"]
 
-option_notes = colors.yellow+"This module may not work with gmail, yahoo, yandex\n please run your own SMTP!"+colors.end
+option_notes = colors.yellow+"This module may not work with gmail, yahoo, yandex!\n Please run your own SMTP!"+colors.end
 # Simple changelog
 changelog = "Version 1.0:\nrelease"
 
