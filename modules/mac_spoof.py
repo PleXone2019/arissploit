@@ -1,5 +1,3 @@
-
-
 from core.arissploit import *
 import os
 from core import colors
