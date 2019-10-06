@@ -21,27 +21,27 @@ from core import mscop
 
 def check_for_updates():
 	try:
-		print(colors.green+"checking for updates..."+colors.end)
+		print(colors.green+"Checking for updates..."+colors.end)
 		r = requests.get("https://api.github.com/repos/entynetproject/arissploit/releases/latest")
 		if(r.ok):
 			items = json.loads(r.text or r.content)
 			rver = items['tag_name']
 
 			if "beta" in rver and "alpha" in info.version:
-				print(colors.green+"update found"+colors.end)
+				print(colors.green+"Update found!"+colors.end)
 				return True 
 
 			elif "beta" not in rver and "alpha" not in rver:
 				if "beta" in info.version or "alpha" in info.version:
-					print(colors.green+"update found"+colors.end)
+					print(colors.green+"Update found!"+colors.end)
 					return True
 
 			elif version.parse(rver) > version.parse(info.version):
-				print(colors.green+"update found"+colors.end)
+				print(colors.green+"Update found!"+colors.end)
 				return True
 
 			else:
-				print(colors.yellow+"updates not found"+colors.end)
+				print(colors.yellow+"Updates not found."+colors.end)
 				return False
 		else:
 			print("error")
@@ -49,27 +49,27 @@ def check_for_updates():
 		print(colors.red+"error: "+str(error)+colors.end)
 
 def update():
-	answer = input("do you want to start update? ")
+	answer = input("Do you want to start update [yes/no] ? ")
 
 	if answer != "yes" and answer != "y":
 		return
 
 
 	url = "https://github.com/entynetproject/arissploit/tarball/master"
-	print(colors.green+"downloading..."+colors.end)
+	print(colors.green+"Downloading..."+colors.end)
 
 	u = urllib.request.urlopen(url)
 
-	print(colors.green+"clearing tmp..."+colors.end)
+	print(colors.green+"Clearing tmp..."+colors.end)
 	mscop.clear_tmp()
 
-	print(colors.green+"writing..."+colors.end)
+	print(colors.green+"Writing..."+colors.end)
 
 	f = open(getpath.tmp()+"update.tar.gz", "wb")
 	f.write(u.read())
 	f.close()
 
-	print(colors.green+"extracting..."+colors.end)
+	print(colors.green+"Extracting..."+colors.end)
 	os.system("tar -zxvf '"+getpath.tmp()+"update.tar.gz' -C '"+getpath.tmp()+"'")
 
 	files = glob(getpath.tmp()+"*/")
@@ -81,12 +81,12 @@ def update():
 			break
 
 	if update_path == None:
-		print(colors.red+"error: update package not found!"+colors.end)
+		print(colors.red+"Error: update package not found!"+colors.end)
 		return
 
 	files = glob(update_path+"*")
 
-	print(colors.green+"installing update..."+colors.end)
+	print(colors.green+"Installing update..."+colors.end)
 
 	for file in files:
 
@@ -99,8 +99,8 @@ def update():
 			distutils.dir_util.copy_tree(file, getpath.main()+file_name)
 
 
-	print(colors.green+"clearing tmp..."+colors.end)
+	print(colors.green+"Clearing tmp..."+colors.end)
 	mscop.clear_tmp()
 
-	print(colors.green+"update installed! closing Arissploit Framework"+colors.end)
+	print(colors.green+"Update installed! Closing Arissploit Framework..."+colors.end)
 	sys.exit()
