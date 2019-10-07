@@ -25,12 +25,12 @@ def check_for_updates():
 			items = json.loads(r.text or r.content)
 			rver = items['tag_name']
 
-			if "beta" in rver and "alpha" in info.version:
+			if "dev" in rver and "dev" in info.version:
 				print(colors.green+"Update found!"+colors.end)
 				return True 
 
-			elif "beta" not in rver and "alpha" not in rver:
-				if "beta" in info.version or "alpha" in info.version:
+			elif "dev" not in rver and "dev" not in rver:
+				if "dev" in info.version or "dev" in info.version:
 					print(colors.green+"Update found!"+colors.end)
 					return True
 
