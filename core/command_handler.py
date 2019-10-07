@@ -1,5 +1,3 @@
-
-
 from core.exceptions import UnknownCommand
 from core.exceptions import ModuleNotFound
 from core.exceptions import VariableError
