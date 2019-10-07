@@ -1,5 +1,3 @@
-
-
 # Import python modules
 
 import sys
@@ -28,7 +26,7 @@ from prettytable import PrettyTable
 import core.cowsay
 from core import dsag
 import core.matrix
-import core.touchingsky
+import core.sky
 from core.hftest import check_module
 from core import update
 from core import mscop
@@ -413,7 +411,7 @@ class Cmethods:
 			raise UnknownCommand("Unkown command!")
 
 	def sky(self, args):
-		core.touchingsky.main()
+		core.sky.main()
 
 	def update(self, args):
 		if update.check_for_updates() == True:
