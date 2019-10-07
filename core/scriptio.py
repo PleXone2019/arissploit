@@ -1,5 +1,3 @@
-
-
 # Import python modules
 import readline
 import sys
