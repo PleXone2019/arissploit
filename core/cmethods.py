@@ -24,7 +24,6 @@ from core import colors
 from core import moduleop
 from prettytable import PrettyTable
 import core.cowsay
-from core import dsag
 import core.matrix
 import core.sky
 from core.hftest import check_module
@@ -397,9 +396,6 @@ class Cmethods:
 			return
 		except ValueError:
 			print(core.cowsay.cowsay("Arissploit Framework"))
-
-	def ds(self, args):
-		print(dsag.darkside)
 
 	def make(self, args):
 		try:
