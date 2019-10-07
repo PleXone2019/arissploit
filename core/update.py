@@ -102,5 +102,5 @@ def update():
 	print(colors.green+"Clearing tmp..."+colors.end)
 	mscop.clear_tmp()
 
-	print(colors.green+"Update installed! Closing Arissploit Framework..."+colors.end)
+	print(colors.green+"Update installed!"+colors.end)
 	sys.exit()
