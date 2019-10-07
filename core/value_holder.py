@@ -1,5 +1,3 @@
-
-
 saveddict = None
 
 def save_values(variables):
