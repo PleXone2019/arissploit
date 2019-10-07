@@ -1,4 +1,3 @@
-
 from core import colors
 
 def setvar(variable, value, variables):
