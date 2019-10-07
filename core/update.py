@@ -1,5 +1,3 @@
-
-
 # Python modules
 
 import requests
