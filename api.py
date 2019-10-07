@@ -1,6 +1,3 @@
-
-
-
 # Import python modules
 import sys
 import os
