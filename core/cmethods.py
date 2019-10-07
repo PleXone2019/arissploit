@@ -339,11 +339,10 @@ class Cmethods:
 						template_contents[12] = "	\"lastmod\": \""+(time.strftime("%d.%m.%Y"))+"\", # Last modification\n"
 						mfile.writelines(template_contents)
 						mfile.close()
-						print(colors.bold+"Module "+ args[1] +".py" +" created to modules folder"+colors.end)
-						print(colors.bold+"Done"+colors.end)
+						print(colors.bold+"Module "+ args[1] +".py" +" saved to ./modules"+colors.end)
 
 				except IndexError:
-					print(colors.red + "Please enter module's name!" + colors.end)
+					print(colors.red + "Please enter module name!" + colors.end)
 
 				except PermissionError:
 					print(colors.red + "Error: permission denied!" + colors.end)
