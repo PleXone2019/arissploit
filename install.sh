@@ -57,6 +57,10 @@ clear
 cat ~/arissploit/banner/banner.txt
 echo -e "\033[1;33mBy Entynetproject\033[0m"
 sleep 3
+echo -e """Arissploit is simple framework that has been made for penetration 
+testing tools. Arissploit Framework offers simple structure, basic CLI, 
+and useful features for penetration testing tools development."""
+sleep 3
 echo -e "Press \033[1;33many key\033[0m to install arissploit"
 read -n 1
 
