@@ -88,8 +88,6 @@ class Cmethods:
 	def os(self, args):
 		CYAN = '\033[1;34m'
 		ENDL = '\033[0m'
-		print(CYAN+"[*]"+ENDL+" exec: "+args)
-		print("")
 		os.system(' '.join(args))
 
 	def help(self, args):
