@@ -65,8 +65,6 @@ echo -e "Creators of Arissploit Framework (\033[4;33marissploit team\033[0m):"
 sleep 3
 echo -e "\033[4;34mEntynetproject\033[0m - Main Developer"
 sleep 3
-echo -e "\033[4;33mDJ Mobley\033[0m      - Ascii Designer"
-sleep 3
 echo -e "Press \033[1;33many key\033[0m to install arissploit"
 read -n 1
 
