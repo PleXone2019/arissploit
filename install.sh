@@ -55,7 +55,7 @@ echo -e "More on our site:"
 sleep 3
 echo -e "==> \033[1;33mhttp://entynetproject.simplesite.com/\033[0m"
 sleep 3
-echo -e "Creators of Arissploit Framework (\033[4;33marissploit team\033[0m):"
+echo -e "Creators of Arissploit Framework (\033[4;33mArissploit Team\033[0m):"
 sleep 3
 echo -e "\033[4;34mEntynetproject\033[0m - Main Developer"
 sleep 3
