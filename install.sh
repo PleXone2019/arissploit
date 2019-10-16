@@ -89,6 +89,7 @@ if [[ "$PI" = "yes" ]]
 then
 CONF="amd"
 fi
+fi
 
 if [[ "$CONF" = "amd" ]]
 then
