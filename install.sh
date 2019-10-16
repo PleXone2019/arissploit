@@ -83,8 +83,8 @@ then
 sleep 1
 clear
 sleep 1
-echo -e "Is this a single board computer?"
-read -e -p $'(\033[4;93myes\033[4;0m/\033[4;93mno\033[0m)' PI
+echo -e "Is this a single board computer?("$YS"yes"$CE"/"$YS"no"$CE"):"
+read -e -p $'(\033[4;93mconfirm\033[0m)> ' PI
 if [[ "$PI" = "yes" ]]
 then
 CONF="amd"
