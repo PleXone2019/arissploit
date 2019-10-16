@@ -73,10 +73,22 @@ chmod +x /usr/local/bin/arissploit
 } &> /dev/null
 
 sleep 1
-echo -e "Select your architecture ("$YS"amd"$CE"/"$YS"intel"$CE"/"$YS"arm"$CE")."
-echo -e "Arissploit supports "$YS"amd"$CE", "$YS"intel"$CE" and "$YS"arm"$CE" architectures."
-echo -e "Select your architecture to install compatible dependencies."
+echo -e "What is your architecture?("$YS"amd"$CE"/"$YS"intel"$CE"/"$YS"arm"$CE"):"
+echo -e "Arissploit supports "$YS"amd"$CE", "$YS"intel"$CE" and "$YS"arm"$CE" architectures!"
+echo -e "Select your architecture to install compatible dependencies!"
 read -e -p $'(\033[4;93march\033[0m)> ' CONF
+
+if [[ "$CONF" = "arm" ]]
+then
+sleep 1
+clear
+sleep 1
+echo -e "Is this a single board computer?"
+read -e -p $'(\033[4;93myes\033[4;0m/\033[4;93mno\033[0m)' PI
+if [[ "$PI" = "yes" ]]
+then
+CONF="amd"
+fi
 
 if [[ "$CONF" = "amd" ]]
 then
