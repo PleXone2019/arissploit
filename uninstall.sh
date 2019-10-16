@@ -38,6 +38,8 @@ rm /usr/local/bin/arissploit
 rm -r ~/arissploit
 } &> /dev/null
 
+clear
+
 echo -e
 echo -e
 
