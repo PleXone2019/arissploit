@@ -1,6 +1,6 @@
 # Arissploit Framework (Penetration Testing Tools)
         
-<h3 align="center"><img src="https://user-images.githubusercontent.com/43011806/57065407-f66fd680-6cd1-11e9-9f72-5eba1b123cec.jpeg" alt="logo" height="500px"></h3>
+<h3 align="center"><img src="https://user-images.githubusercontent.com/43011806/57065407-f66fd680-6cd1-11e9-9f72-5eba1b123cec.jpeg" alt="logo" height="250px"></h3>
 
 </a>
 <h4 align="center">Details</h4>                
